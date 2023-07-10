@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend of Decora in Node.js => Express.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "js"
+  ],
+  "author": "Bilal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongose": "^0.0.2-security",
+    "nodemon": "^3.0.1"
+  }
+}

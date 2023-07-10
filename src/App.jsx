@@ -1,33 +1,73 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react"
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+import {
+  AboutUs,
+  Cart,
+  Categories,
+  CheckOut,
+  ContactUs,
+  Faqs,
+  HomePage,
+  LogIn,
+  ManageAccount,
+  Returns,
+  SignUp,
+  ViewProduct,
+  WishList} from './User_Pages/index'
+
+  import {
+    AddProduct,
+    AdminLogin,
+    Dashboard,
+    ManageOrders,
+    ManageReturns,
+    ManageUsers,
+    Manageproducts,
+    Revenue} from './Admin_Pages/index'
+
+  
+
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<HomePage />} />
+          <Route exact path="/LogIn" element={<LogIn />} />
+          <Route exact path="/SignUp" element={<SignUp />} />
+          <Route exact path="/Categories" element={<Categories />} />
+          <Route exact path="/ViewProducts" element={<ViewProduct />} />
+          <Route exact path="/Cart" element={<Cart />} />
+          <Route exact path="/CheckOut" element={<CheckOut />} />
+          <Route exact path="/Returns" element={<Returns />} />
+          <Route exact path="/ManageAccount" element={<ManageAccount />} />
+          <Route exact path="/WishList" element={<WishList />} />
+          <Route exact path="/ContactUs" element={<ContactUs />} />
+          <Route exact path="/AboutUs" element={<AboutUs />} />
+          <Route exact path="/FAQs" element={<Faqs />} />
+          <Route exact path="/Dashboard" element={<Dashboard />} />
+          <Route exact path="/AdminLogin" element={<AdminLogin />} />
+          <Route exact path="/AddProduct" element={<AddProduct />} />
+          <Route exact path="/ManageOrders" element={<ManageOrders />} />
+          <Route exact path="/ManageReturns" element={<ManageReturns />} />
+          <Route exact path="/ManageUsers" element={<ManageUsers />} />
+          <Route exact path="/ManageProducts" element={<Manageproducts />} />
+          <Route exact path="/Revenue" element={<Revenue />} />
+
+
+        </Routes>
+
+      </Router>
+        
     </>
   )
 }

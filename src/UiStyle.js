@@ -15,6 +15,13 @@ const styles = {
 };
 
 const lightMode = {
+    primaryColor: "d4a373",
+    secondaryColor: "faedcd",
+    tertiaryColor: "fefae0",
+    quaternaryColor: "e9edc9",
+    quinaryColor: "ccd5ae",
+    
+
 
 
 }

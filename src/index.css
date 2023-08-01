@@ -10,7 +10,8 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  background-color: var(--quinaryColor);
+  /* background-color: var(--tertiaryColor); */
+  background-color: white;
   
 }
 

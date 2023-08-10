@@ -15,7 +15,8 @@ module.exports = {
         "white-100": "#f3f3f3",
         textcolor2: "#f97316" ,
         btncolor1 : "#f97316",
-        btncolor2: "#0a0a0a"
+        btncolor2: "#0a0a0a",
+        btncolor3: "#ffffff"
         
       },
       boxShadow: {
@@ -23,6 +24,16 @@ module.exports = {
       },
       screens: {
         xs: "450px",
+        sm: '640px',
+
+      md: '768px',
+
+      lg: '1024px',
+
+      xl: '1280px',
+
+      xxl : '1536px'
+      
       },
       backgroundImage: {
         "heroVideo": "url('/src/assets/media/hero_video.mp4')",

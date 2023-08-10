@@ -164,17 +164,17 @@ export default function Card() {
 
         <div className='aspect-h-[20rem]  aspect-w-[20rem]  '>
           <img src={productData.image} alt={productData.imageName}
-            className={`rounded-xl ${isHover ? 'drop-shadow-2xl' : 'drop-shadow-2xl:hidden'
+            className={`rounded-xl ${isHover ? 'transition cursor-pointer drop-shadow-2xl' : 'drop-shadow-2xl:hidden'
               } `}
           ></img>
 
         </div>
 
 
-        <div>
+        <div className='aspect-h-[8rem] aspect-w-[20rem]'>
 
 
-          <div className='relative h-[8rem] bg-transparent w-[20rem] pt-4 inline-block'>
+          <div className='relative  bg-transparent  pt-4 '>
 
             <div className='bg-transparent mb-2'>
               {Stars(productData.rating)}
@@ -193,7 +193,7 @@ export default function Card() {
             </h1>
 
 
-            <button className={`absolute bottom-3  px-7 py-3 right-0 bg-btncolor1 text-white text-[1.12rem] hover:bg-btncolor2  rounded-xl
+            <button className={`absolute bottom-3  px-7 py-3 right-0 bg-btncolor1 text-white text-[1.12rem] transform hover:bg-btncolor2  rounded-xl
             ${isHover ? '' : 'hidden'
               }`}>
               Add to Cart

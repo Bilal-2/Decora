@@ -16,7 +16,7 @@ export default function Navbar() {
       
       
       <div className='grid grow justify-items-center  bg-transparent w-10px'>
-        <div className='cursor-pointer bg-transparent text-bold'>
+        <div className='cursor-pointer bg-transparent text-bold' >
           Decora
         </div>
 

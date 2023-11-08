@@ -1,4 +1,4 @@
-import React from "react"
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -39,13 +39,13 @@ function App() {
 
   return (
     <>
-      <Router>
+       <Router>
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route exact path="/LogIn" element={<LogIn />} />
           <Route exact path="/SignUp" element={<SignUp />} />
           <Route exact path="/Categories" element={<Categories />} />
-          <Route exact path="/ViewProducts" element={<ViewProduct />} />
+          <Route exact path="/ViewProduct" element={<ViewProduct />} />
           <Route exact path="/Cart" element={<Cart />} />
           <Route exact path="/CheckOut" element={<CheckOut />} />
           <Route exact path="/Returns" element={<Returns />} />
@@ -67,7 +67,6 @@ function App() {
         </Routes>
 
       </Router>
-        
     </>
   )
 }

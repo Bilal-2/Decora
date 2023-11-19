@@ -1,7 +1,6 @@
-import React from 'react'
 import chair from '../assets/Stock Images/testchair.jpg'
 import { useState } from 'react';
-
+//import { useHistory } from 'react-router-dom';
 
 
 // function Stars( rating ) {
@@ -140,6 +139,18 @@ function Stars(rating) {
 
 
 export default function Card() {
+  // const history = useHistory();
+
+  // const handleClick = () => {
+  //   // Navigate to '/ViewProduct' when the image is clicked
+  //   // Use the Link component or programmatically navigate using history.push
+
+  //   // Example using Link:
+  //   // return <Link to='/ViewProduct'></Link>;
+
+  //   // Example using programmatic navigation
+  //   history.push('/ViewProduct');
+  // };
   const productData = {
 
     title: 'Chair',
@@ -155,10 +166,11 @@ export default function Card() {
   const [isHover, setIsHover] = useState(false)
 
   return (
-    <div className='inline-block '>
+    <div className='inline-block ' >
       <div className='   inline-block'
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
+       
       >
 
 
@@ -166,6 +178,7 @@ export default function Card() {
           <img src={productData.image} alt={productData.imageName}
             className={`rounded-xl ${isHover ? 'transition cursor-pointer drop-shadow-2xl' : 'drop-shadow-2xl:hidden'
               } `}
+              // onClick={handleClick()}
           ></img>
 
         </div>
@@ -195,9 +208,12 @@ export default function Card() {
 
             <button className={`absolute bottom-3  px-7 py-3 right-0 bg-btncolor1 text-white text-[1.12rem] transform hover:bg-btncolor2  rounded-xl
             ${isHover ? '' : 'hidden'
-              }`}>
+            
+              }` }>
               Add to Cart
             </button>
+           
+           
           </div>
 
 

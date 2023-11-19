@@ -2,8 +2,13 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   mode: "jit",
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      gridTemplateRows: {
+        '[auto,auto,1fr]': 'auto auto 1fr',
+      },
       colors: {
         primary: "#fefae0",
         secondary: "#faedcd",
@@ -41,5 +46,7 @@ module.exports = {
       },
     },
   },
-  plugins: [require("daisyui",'@tailwindcss/aspect-ratio')],
+  plugins: [require("daisyui",'@tailwindcss/aspect-ratio','@tailwindcss/forms','@tailwindcss/typography')],
+ 
+
 };

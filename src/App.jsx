@@ -31,6 +31,7 @@ import { store } from "./redux/store";
 import SingleProduct from "./User_Pages/SingleProduct";
 import Products from "./User_Pages/products";
 import { StoreProvider } from "./context";
+import ARComponent from "./Components/ARComponent";
 
 function App() {
   return (
@@ -58,6 +59,7 @@ function App() {
               <Route exact path="/ManageOrders" element={<ManageOrders />} />
               <Route exact path="/ManageReturns" element={<ManageReturns />} />
               <Route exact path="/ManageUsers" element={<ManageUsers />} />
+              <Route exact path="/AR" element={<ARComponent />} />
               <Route
                 exact
                 path="/ManageProducts"

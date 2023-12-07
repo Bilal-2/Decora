@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ReactStars from "react-rating-stars-component";
 import { BsStarFill, BsStarHalf, BsStar } from 'react-icons/bs';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Bars } from 'react-loader-spinner'
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css'
 import InnerImageZoom from 'react-inner-image-zoom'
@@ -44,6 +44,11 @@ function SingleProduct() {
   const checkItemExists = (id) => {
     const find = cartItems.filter(item => item.id === id)
     return !!find.length
+  }
+
+  const navigation = useNavigate();
+  const handleClick = () => { 
+    navigation('/ar')
   }
 
   return (
@@ -111,7 +116,10 @@ function SingleProduct() {
                   ) : (
                     <button onClick={addToBasket} className='bg-black text-white py-2 px-14 rounded text-sm mt-5 block'>Add to cart</button>
                   )}
+
                 </div>
+                <button onClick={handleClick} className='bg-black text-white py-2 px-14 rounded text-sm mt-5 block'>View in your Space</button>
+
               </div>
             </div>
             <div className="mt-10">

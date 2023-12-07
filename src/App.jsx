@@ -31,7 +31,9 @@ import { store } from "./redux/store";
 import SingleProduct from "./User_Pages/SingleProduct";
 import Products from "./User_Pages/products";
 import { StoreProvider } from "./context";
-import ARComponent from "./Components/ARComponent";
+import ModelContainer from "./Components/3D Renderer/ModelContainer";
+import XRModelContainer from "./Components/AR Component/XRModelContainer";
+//import ARComponent from "./Components/ARComponent";
 
 function App() {
   return (
@@ -59,7 +61,9 @@ function App() {
               <Route exact path="/ManageOrders" element={<ManageOrders />} />
               <Route exact path="/ManageReturns" element={<ManageReturns />} />
               <Route exact path="/ManageUsers" element={<ManageUsers />} />
-              <Route exact path="/AR" element={<ARComponent />} />
+              <Route exact path="/3D" element={<ModelContainer />} />
+              <Route exact path="/AR" element={<XRModelContainer />} />
+              {/* <Route exact path="/AR" element={<ARComponent />} /> */}
               <Route
                 exact
                 path="/ManageProducts"
@@ -68,6 +72,7 @@ function App() {
               <Route exact path="/Revenue" element={<Revenue />} />
               <Route exact path="/products" element={<Products />} />
               <Route path="products/:id" element={<SingleProduct />} />
+
               <Route
                 path="*"
                 element={

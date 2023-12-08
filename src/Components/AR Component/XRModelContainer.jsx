@@ -4,7 +4,10 @@ import {XR,ARButton} from "@react-three/xr"
 export default function XRModelContainer() {
   return (
     <>
-        <ARButton />
+        <ARButton 
+        sessionInit={{
+            requiredFeatures: ["hit-test"],
+          }}/>
         <Canvas>
             <XR>
             <XRModel />

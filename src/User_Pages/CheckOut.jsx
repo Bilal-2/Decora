@@ -21,6 +21,7 @@ import { useSelector } from 'react-redux';
 import { selectItems, selectTotalPrice, selectTotalCartItems } from '../redux/slices/basketSlice';
 import { useNavigate } from 'react-router-dom';
 import Header from "../Components/Header/Header";
+import { Footer } from '../Components';
 
 
 
@@ -375,6 +376,7 @@ export default function CheckOut() {
           </div>
         </form>
       </div>
+      <Footer/>
     </div>
   )
 }

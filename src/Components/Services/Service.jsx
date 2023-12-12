@@ -13,13 +13,12 @@ const Service = () => {
           <ServiceItem
             img="https://cdn-icons-png.flaticon.com/512/685/685388.png"
             title="Modular, easy-to-move design"
-            paragraph="Every single order ships for free. NO minimums, no tiers, no fine print whatsoever"
+            paragraph="Streamline your lifestyle with our versatile and adaptable solution for seamless organization and functionality on the go."
           />
           <ServiceItem
             img="https://cdn-icons-png.flaticon.com/512/3275/3275760.png"
             title="Durable, premium materials"
-            paragraph="Every single order ships for free. NO minimums, no tiers,
-            no fine print whatsoever"
+            paragraph="Crafted with durable, premium materials for an unparalleled blend of longevity and luxury in our service offerings."
           />
 
         </div>

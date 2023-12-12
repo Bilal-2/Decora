@@ -1,3 +1,6 @@
+import { Footer } from "../Components";
+import Header from "../Components/Header/Header";
+
 /*
   This example requires Tailwind CSS v2.0+ 
   
@@ -17,6 +20,7 @@
 export default function Example() {
   return (
     <>
+    <Header/>
       {/*
         This example requires updating your template:
 
@@ -180,6 +184,7 @@ export default function Example() {
           />
         </div>
       </div>
+      <Footer/>
     </>
   )
 }

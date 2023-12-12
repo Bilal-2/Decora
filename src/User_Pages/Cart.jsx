@@ -14,6 +14,7 @@ import {
 import CartCard from "../Components/CartCard";
 import { QuestionMarkCircleIcon } from "@heroicons/react/solid";
 import Header from "../Components/Header/Header";
+import { Footer } from "../Components";
 
 export default function Cart() {
   const cartItems = useSelector(selectItems);
@@ -160,6 +161,7 @@ export default function Cart() {
           </Link>
         </div>
       )}
+      <Footer/>
     </>
   );
 }

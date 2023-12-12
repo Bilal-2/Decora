@@ -8,6 +8,8 @@ import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css'
 import InnerImageZoom from 'react-inner-image-zoom'
 import { useDispatch, useSelector } from 'react-redux'
 import { addItem, selectItems } from "../redux/slices/basketSlice";
+import Header from "../Components/Header/Header";
+import { Footer } from "../Components";
 
 function SingleProduct() {
   let { id } = useParams();
@@ -53,6 +55,7 @@ function SingleProduct() {
 
   return (
     <>
+    <Header />
       <div className="container mx-auto md:w-5/6 pt-5 pb-7 px-2 md:px-0">
         {/* Bread crub */}
         {loading ? (
@@ -109,7 +112,7 @@ function SingleProduct() {
                   />
                   <span className="text-xs pl-1">({reviews})</span>
                 </div>
-                <p className="text-[#bb8e1d] mt-3 text-xl md:text-2xl">${price?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
+                <p className="text-[#bb8e1d] mt-3 text-xl md:text-2xl">Rs {price?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
                 <div>
                   {checkItemExists(id) ? (
                     <button className='bg-black text-white py-2 px-14 rounded text-sm mt-5 block'>Already added</button>
@@ -130,6 +133,7 @@ function SingleProduct() {
         )}
 
       </div>
+      <Footer/>
     </>
   )
 }

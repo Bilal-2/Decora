@@ -13,6 +13,7 @@ import Discover from "../Components/Discover/Discover.jsx";
 import Testimonial from "../Components/Testimonial/Testimonial.jsx";
 import Newsletter from "../Components/Newsletter/Newsletter.jsx";
 import Shop from "../Components/Shop/Shop.jsx";
+import { Link } from "react-router-dom";
 
 export default function HomePage() {
   return (
@@ -130,13 +131,12 @@ export default function HomePage() {
               </h2>
 
               <div className="w-full bg-transparent flex justify-center">
-                <button
+                <Link to="/products"
                   className={
-                    "   px-7 py-3 bg-btncolor1  text-[1.12rem] transform hover:bg-btncolor2   rounded-xl "
-                  }
-                >
+                    "   px-7 py-3 bg-btncolor1  text-[1.12rem] transform hover:bg-btncolor2 text-white  rounded-xl "
+                  }>
                   Shop Now
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -155,13 +155,13 @@ export default function HomePage() {
               </h2>
 
               <div className="w-full bg-transparent flex justify-center">
-                <button
+                <Link to="/products"
                   className={
-                    "   px-7 py-3 bg-btncolor1  text-[1.12rem] transform hover:bg-btncolor2   rounded-xl "
+                    "   px-7 py-3 bg-btncolor1  text-[1.12rem] transform hover:bg-btncolor2 text-white   rounded-xl "
                   }
                 >
                   Shop Now
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -174,17 +174,17 @@ export default function HomePage() {
             <div className="absolute bottom-0 left-0 text-white font-bold text-xl bg-transparent p-9  w-full h-full place-content-center ">
               <p className="bg-transparent text-center  mt-6">New Arrivals</p>
               <h2 className="bg-transparent text-center text-2xl sm:text-2xl md:text-3xl lg:text-4xl  my-7">
-                SALE UPTO 30% <br /> OFF
+                SALE UPTO 30%  OFF
               </h2>
 
               <div className="w-full bg-transparent flex justify-center">
-                <button
+                <Link to="/products"
                   className={
-                    "   px-7 py-3 bg-btncolor1  text-[1.12rem] transform hover:bg-btncolor2   rounded-xl "
+                    "   px-7 py-3 bg-btncolor1  text-[1.12rem] transform hover:bg-btncolor2 text-white   rounded-xl "
                   }
                 >
                   Shop Now
-                </button>
+                </Link>
               </div>
             </div>
           </div>

@@ -9,6 +9,7 @@ import { addItem, selectItems } from "../redux/slices/basketSlice";
 
 import { StoreContext } from "../context";
 import Header from "../Components/Header/Header";
+import { Footer } from "../Components";
 
 
 const CATEGORIES = [
@@ -324,6 +325,7 @@ export default function Products() {
           </section>
         </div>
       </section>
+      <Footer/>
     </>
   );
 }

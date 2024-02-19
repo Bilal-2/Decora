@@ -22,17 +22,40 @@ const Shop = () => {
     (
       async () => {
         setLoading(true)
-        const response = await fetch('https://course-api.com/react-store-products', {
+       
+          // let response = await fetch("http://localhost:5000/api/ProductsData", {
+          //   method: "POST",
+          //   headers: {
+          //     "Content-Type": "application/json"
+          //   }
+          // });
+          // response = await response.json();
+          // //setLoading(false);
+          // console.log (response);
+
+        const response = await fetch('http://localhost:5000/api/ProductsData', {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            }
+        }).then(res => res.json()).catch(err => console.log("ERROR: ", err)).finally(() => setLoading(false))
+
+        
+        const respone = await fetch('https://course-api.com/react-store-products', {
           mode: 'cors',
           headers: {
             'Access-Control-Allow-Origin':'*'
           }
         }).then(res => res.json()).catch(err => console.log("ERROR: ", err)).finally(() => setLoading(false))
-        setProducts(response)
-        setLoadedProducts(createPagination(response))
+
+      
+        setProducts(response[0])
+        setLoadedProducts(createPagination(response[0]))
       }
     )();
   }, []);
+
+  
 
   const createPagination = (items, limit = 8, offset = 0) => {
     let arr = []
@@ -82,7 +105,7 @@ const Shop = () => {
               )}
               {!!loadedProducts.length && loadedProducts?.map(product => (
                 <ShopItem
-                  key={product?.id}
+                  key={product?._id}
                   {...product}
                   onClick={() => addToBasket(product)}
                   exists={checkItemExists}

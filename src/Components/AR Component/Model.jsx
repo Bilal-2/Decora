@@ -27,7 +27,11 @@ import { Suspense } from 'react'
 
 
 export default function Model({position}) {
-    const gltf = useLoader(GLTFLoader, './models/Chair0.glb')
+    //new line 
+    const modelUrl = "http://localhost:5000/uploads/1708109189543-Chair0.glb";
+    const gltf = useLoader(GLTFLoader,modelUrl)
+    // const gltf = useLoader(GLTFLoader, './models/Chair0.glb')
+
     return(
         <Suspense fallback={null}>
             <primitive position={position} object={gltf.scene} />

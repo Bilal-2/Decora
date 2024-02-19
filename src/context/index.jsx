@@ -1,8 +1,8 @@
-import React, {createContext, useState} from 'react'
+import React, {createContext, useEffect, useState} from 'react'
 //import useLocalStorage from '../hooks/useLocalStorage'
-import useFetch from '../hooks/useFetch'
 
 const StoreContext = createContext(null)
+
 
 const StoreProvider = ({children}) => {
     //const [cart, setCart] = useLocalStorage('commerce_cart', [])
@@ -19,9 +19,36 @@ const StoreProvider = ({children}) => {
     const [sortByIndex, setSortByIndex] = useState(0)
     const [viewGrid, setViewGrid] = useState(true)
 
-    const {response: products, error } = useFetch('https://course-api.com/react-store-products')
+    //Products
+    const [products, setProducts] = useState([])
 
-    if(error) return 'error....';
+
+
+
+    useEffect(() => {
+        (
+          async () => {
+       
+    
+            const response = await fetch('http://localhost:5000/api/ProductsData', {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json"
+                }
+            }).then(res => res.json()).catch(err => console.log("ERROR: ", err))
+    
+            //console.log(response[0]);
+    
+            setProducts(response[0])
+          }
+        )();
+      }, []);
+
+      
+
+
+
+    
     
     
 
@@ -45,7 +72,7 @@ const StoreProvider = ({children}) => {
             companyIndex, setCompanyIndex,
             sortByIndex, setSortByIndex,
             viewGrid, setViewGrid,
-            products, error,
+            products,
             clearFilters
         }}>
             {products ? children : ''}

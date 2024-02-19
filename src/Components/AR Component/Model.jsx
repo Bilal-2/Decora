@@ -1,41 +1,39 @@
-// import { useFrame } from "@react-three/fiber";
-// import { useRef } from "react";
-
-// export default function Model({position}) {
-//     const modleRef = useRef();
-//     useFrame((state,delta) => {
-//         modleRef.current.rotation.y += delta ;
-
-//     });
-//   return (
-//     <>
-       
-//         <mesh ref={modleRef} position={position}>
-//             <boxGeometry />
-//             <meshStandardMaterial color={"mediumpurple"}/>
-//         </mesh>
-//     </>
-//   )
-// }
 
 
+import { useLoader } from '@react-three/fiber';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { Suspense, useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
- import { useLoader } from '@react-three/fiber'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
-import { Suspense } from 'react'
+export default function Model({ position }) {
+  let { _id } = useParams();
+  const [product, setProduct] = useState(null);
+  const { model } = product || {};
+  
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(`http://localhost:5000/api/ARpage/${_id}`).then(res => res.json());
+        setProduct(response);
+      } catch (error) {
+        console.error('Error fetching product:', error);
+      }
+    };
 
+    fetchData();
+  }, [_id]);
 
-
-export default function Model({position}) {
-    //new line 
-    const modelUrl = "http://localhost:5000/uploads/1708109189543-Chair0.glb";
-    const gltf = useLoader(GLTFLoader,modelUrl)
-    // const gltf = useLoader(GLTFLoader, './models/Chair0.glb')
-
-    return(
-        <Suspense fallback={null}>
-            <primitive position={position} object={gltf.scene} />
-        </Suspense>
-    );
-     
+  if (!product) {
+    // Handle loading state or show an error message
+    return null;
   }
+
+  const modelUrl = model;
+  const gltf = useLoader(GLTFLoader, modelUrl);
+
+  return (
+    <Suspense fallback={null}>
+      <primitive position={position} object={gltf.scene} />
+    </Suspense>
+  );
+}

@@ -40,13 +40,15 @@ const Shop = () => {
             }
         }).then(res => res.json()).catch(err => console.log("ERROR: ", err)).finally(() => setLoading(false))
 
+        //console.log(response[0]);
+
         
-        const respone = await fetch('https://course-api.com/react-store-products', {
-          mode: 'cors',
-          headers: {
-            'Access-Control-Allow-Origin':'*'
-          }
-        }).then(res => res.json()).catch(err => console.log("ERROR: ", err)).finally(() => setLoading(false))
+        // const respone = await fetch('https://course-api.com/react-store-products', {
+        //   mode: 'cors',
+        //   headers: {
+        //     'Access-Control-Allow-Origin':'*'
+        //   }
+        // }).then(res => res.json()).catch(err => console.log("ERROR: ", err)).finally(() => setLoading(false))
 
       
         setProducts(response[0])

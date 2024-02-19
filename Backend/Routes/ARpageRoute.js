@@ -5,14 +5,15 @@ const mongoose = require('mongoose');
 const ObjectId = mongoose.Types.ObjectId;
 
 
-router.get('/SingleProdeuct/:id', async (req, res) => {
+router.get('/ARpage/:id', async (req, res) => {
   try {
     //await connectDB();
     const fetch_Products = mongoose.connection.db.collection('ProductsData');
-      
-      
+    const projection = { _id: 0, '3D_model': 1 };
     const productId = req.params.id;
-    const products = await fetch_Products.findOne({ _id: new ObjectId(productId) });
+    const products = await fetch_Products.findOne({ _id: new ObjectId(productId) }, { _id: 0, '3D_model': 1 });
+
+    
 
     // const product = products.toArray();
     // console.log(products);

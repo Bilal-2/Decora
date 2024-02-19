@@ -12,7 +12,7 @@ import Header from "../Components/Header/Header";
 import { Footer } from "../Components";
 
 function SingleProduct() {
-  let { id } = useParams();
+  let { _id } = useParams();
   const [product, setProduct] = useState(null);
   const [image, setImage] = useState(null);
   const [loading, setLoading] = useState(false)
@@ -20,14 +20,16 @@ function SingleProduct() {
   const dispatch = useDispatch()
   const cartItems = useSelector(selectItems)
 
-  console.log(product);
+  //console.log("id = ", _id);
+
+  //console.log(product);
   useEffect(() => {
     (async () => {
       setLoading(true)
-      const response = await fetch(`https://course-api.com/react-store-single-product?id=${id}`).then(res => res.json()).catch(err => console.log(err)).finally(() => setLoading(false));
+      const response = await fetch(`http://localhost:5000/api/SingleProdeuct/${_id}`).then(res => res.json()).catch(err => console.log(err)).finally(() => setLoading(false));
       setProduct(response);
     })();
-  }, [id])
+  }, [_id])
 
   useEffect(() => {
     if (product) {
@@ -49,13 +51,13 @@ function SingleProduct() {
   }
 
   const navigation = useNavigate();
-  const handleClick = () => { 
-    navigation('/ar')
+  const handleClick = () => {
+    navigation(`/ar/${_id}`)
   }
 
   return (
     <>
-    <Header />
+      <Header />
       <div className="container mx-auto md:w-5/6 pt-5 pb-7 px-2 md:px-0">
         {/* Bread crub */}
         {loading ? (
@@ -114,7 +116,7 @@ function SingleProduct() {
                 </div>
                 <p className="text-[#bb8e1d] mt-3 text-xl md:text-2xl">Rs {price?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
                 <div>
-                  {checkItemExists(id) ? (
+                  {checkItemExists(_id) ? (
                     <button className='bg-black text-white py-2 px-14 rounded text-sm mt-5 block'>Already added</button>
                   ) : (
                     <button onClick={addToBasket} className='bg-black text-white py-2 px-14 rounded text-sm mt-5 block'>Add to cart</button>
@@ -133,7 +135,7 @@ function SingleProduct() {
         )}
 
       </div>
-      <Footer/>
+      <Footer />
     </>
   )
 }

@@ -62,7 +62,7 @@ function App() {
               <Route exact path="/ManageReturns" element={<ManageReturns />} />
               <Route exact path="/ManageUsers" element={<ManageUsers />} />
               <Route exact path="/3D" element={<ModelContainer />} />
-              <Route exact path="/AR" element={<XRModelContainer />} />
+              <Route exact path="/AR/:_id" element={<XRModelContainer />} />
               {/* <Route exact path="/AR" element={<ARComponent />} /> */}
               <Route
                 exact
@@ -71,7 +71,7 @@ function App() {
               />
               <Route exact path="/Revenue" element={<Revenue />} />
               <Route exact path="/products" element={<Products />} />
-              <Route path="products/:id" element={<SingleProduct />} />
+              <Route path="products/:_id" element={<SingleProduct />} />
 
               <Route
                 path="*"

@@ -7,7 +7,7 @@ import Header from "../Header/Header";
 
 const ShopItem = ({
   image,
-  id,
+  _id,
   company,
   name,
   price,
@@ -18,9 +18,11 @@ const ShopItem = ({
 }) => {
   const navigate = useNavigate();
 
+  console.log("id:",_id);
+
   const handleClick = (e) => {
     e.preventDefault();
-    navigate(`/products/${id}`);
+    navigate(`/products/${_id}`);
   };
 
   if (grid) {
@@ -44,7 +46,7 @@ const ShopItem = ({
               </h3>
               <div className="flex justify-between items-center mt-3">
                 <p className="text-gray-600 text-base"> Rs {price}</p>
-                {exists(id) ? (
+                {exists(_id) ? (
                   <button
                     onClick={(e) => {
                       e.stopPropagation();
@@ -89,7 +91,7 @@ const ShopItem = ({
                   <p className="text-gray-600 tracking-widest font-semibold"> Rs {price}</p>
               </div>
               <p>Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic ...</p>
-              <Link to={`/products/${id}`} className="btn bg-[#94634b] text-white w-max text-xs hover:bg-[#b68e7a]">
+              <Link to={`/products/${_id}`} className="btn bg-[#94634b] text-white w-max text-xs hover:bg-[#b68e7a]">
                   Details
               </Link>
           </footer>
@@ -100,7 +102,7 @@ const ShopItem = ({
 
 ShopItem.propTypes = {
   image: PropTypes.string.isRequired,
-  id: PropTypes.number.isRequired,
+  _id: PropTypes.string.isRequired,
   company: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,

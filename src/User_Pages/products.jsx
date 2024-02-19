@@ -312,7 +312,7 @@ export default function Products() {
                 {sortProducts(filteredProducts, sortByIndex).map((product) => (
                   <ShopItem
                     className = "w-full"
-                    key={product.id}
+                    key={product._id}
                     {...product}
                     grid={viewGrid}
                     shouldApplyFullWidth={true}

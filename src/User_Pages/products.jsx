@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import Breadcrumbs from "../components/Breadcrumbs";
+
 import ColorSelector from "../components/ColorSelector";
 //import ProductPanel from '../components/ProductPanel'
 import ShopItem from "../Components/Shop/Shopitem";

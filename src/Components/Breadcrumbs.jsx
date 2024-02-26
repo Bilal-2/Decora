@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-function Breadcrumbs({children}){
+export default function Breadcrumbs({children}){
     const arr = Array.from(children);
     return(
         <section className=" px-[2rem]">
@@ -21,4 +21,3 @@ Breadcrumbs.propTypes = {
     children: PropTypes.node.isRequired
 }
 
-export default Breadcrumbs

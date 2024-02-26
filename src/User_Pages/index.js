@@ -5,7 +5,7 @@ import CheckOut from "./CheckOut";
 import ContactUs from "./ContactUs";
 import Faqs from "./Faqs";
 import HomePage from "./HomePage";
-import LogIn from "./Login";
+// import LogIn from "./Login";
 import ManageAccount from "./ManageAccount";
 import Returns from "./Returns";
 import SignUp from "./SignUp";
@@ -21,7 +21,7 @@ export{
     ContactUs,
     Faqs,
     HomePage,
-    LogIn,
+   // LogIn,
     ManageAccount,
     Returns,
     SignUp,

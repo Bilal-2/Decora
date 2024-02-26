@@ -8,7 +8,7 @@ import {
   ContactUs,
   Faqs,
   HomePage,
-  LogIn,
+  //LogIn,
   ManageAccount,
   Returns,
   SignUp,
@@ -43,7 +43,7 @@ function App() {
           <Router>
             <Routes>
               <Route exact path="/" element={<HomePage />} />
-              <Route exact path="/LogIn" element={<LogIn />} />
+              {/* <Route exact path="/LogIn" element={<LogIn />} /> */}
               <Route exact path="/SignUp" element={<SignUp />} />
               <Route exact path="/Categories" element={<Categories />} />
               <Route exact path="/ViewProduct" element={<ViewProduct />} />

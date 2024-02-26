@@ -17,7 +17,7 @@ import Header from "../Components/Header/Header";
   }
   ```
 */
-export default function Example() {
+export default function LogIn() {
   return (
     <>
     <Header/>

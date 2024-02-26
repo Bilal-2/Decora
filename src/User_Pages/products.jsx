@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import Breadcrumbs from "../components/Breadcrumbs";
+//import Breadcrumbs from "../components/Breadcrumbs";
 
 import ColorSelector from "../components/ColorSelector";
 //import ProductPanel from '../components/ProductPanel'
@@ -123,10 +123,10 @@ export default function Products() {
     <>
     
     <Header/>
-      <Breadcrumbs className="p-[2rem] ">
+      {/* <Breadcrumbs className="p-[2rem] ">
         <Link className="text-amber-600 " to="/">Home</Link>
         <span className=" ">Products</span>
-      </Breadcrumbs>
+      </Breadcrumbs> */}
       <section className="p-[2rem]">
         <div className="tw-container py-10 flex flex-col md:flex-row gap-10">
           <section id="filters">

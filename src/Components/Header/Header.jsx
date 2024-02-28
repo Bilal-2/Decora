@@ -12,8 +12,8 @@ const Header = () => {
   }
 
   return (
-    <section className='bgColor sticky top-0 z-50'>
-      <div className='container md:w-5/6 w-full mx-auto pt-5 pb-7 px-2 md:px-0'>
+    <section className='bgColor sticky top-0 z-50 bg-current'>
+      <div className='container md:w-5/6 w-full mx-0 pt-5 pb-7 px-2 md:px-0 bg-current'>
         <div className='flex justify-between items-center'>
           <div className='w-40'>
             <Link to="/" className="font-semi text-4xl primary_font  text-black">Decora</Link>

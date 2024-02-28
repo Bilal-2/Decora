@@ -33,13 +33,17 @@ import Products from "./User_Pages/products";
 import { StoreProvider } from "./context";
 import ModelContainer from "./Components/3D Renderer/ModelContainer";
 import XRModelContainer from "./Components/AR Component/XRModelContainer";
+import Header from "./Components/Header/Header";
+import { Footer } from "./Components";
 //import ARComponent from "./Components/ARComponent";
 
 function App() {
   return (
     <>
+    
       <Provider store={store}>
         <StoreProvider>
+        
           <Router>
             <Routes>
               <Route exact path="/" element={<HomePage />} />
@@ -83,8 +87,10 @@ function App() {
               />
             </Routes>
           </Router>
+         
         </StoreProvider>
       </Provider>
+      
     </>
   );
 }

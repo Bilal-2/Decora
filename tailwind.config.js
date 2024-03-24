@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const withMT = require("@material-tailwind/react/utils/withMT");
+ 
+module.exports = withMT({
   content: ["./src/**/*.{js,jsx}"],
   mode: "jit",
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
@@ -49,4 +51,4 @@ module.exports = {
   plugins: [require("daisyui",'@tailwindcss/aspect-ratio','@tailwindcss/forms','@tailwindcss/typography')],
  
 
-};
+});

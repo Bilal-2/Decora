@@ -15,7 +15,7 @@ export default function XRModel() {
   })
 
 
-  useHitTest((hitMatrix, hit) => {
+  useHitTest((hitMatrix) => {
     hitMatrix.decompose(
       reticleRef.current.position,
       reticleRef.current.quaternion,

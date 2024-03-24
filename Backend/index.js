@@ -104,12 +104,17 @@ const uploadRouter = require('./Middleware/upload');
 const singleProductRouter = require('./Routes/SingleProduct');
 const arPage = require('./Routes/ARpageRoute');
 const createuser = require('./Routes/CreateUser');
+const allowCors = require('./Middleware/cors');
 
 let gfs;
 mongoDB();
 
+
+// Apply CORS middleware to all routes
+app.use(allowCors);
+
 // Use cors middleware with specific origin
-app.use(cors());
+//app.use(cors());
 
 const conn = mongoose.connection;
 

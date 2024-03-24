@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const connectDB = require('../db'); 
+//const connectDB = require('../db'); 
 const mongoose = require('mongoose');
 const ObjectId = mongoose.Types.ObjectId;
 

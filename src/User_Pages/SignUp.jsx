@@ -22,7 +22,7 @@ export default function SignUp() {
     
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const responce = await fetch("http://localhost:5000/api/createuser", {
+        const responce = await fetch("http://decora-backend.vercel.app/api/createuser", {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"

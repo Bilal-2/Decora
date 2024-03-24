@@ -26,7 +26,7 @@ function SingleProduct() {
   useEffect(() => {
     (async () => {
       setLoading(true)
-      const response = await fetch(`http://localhost:5000/api/SingleProdeuct/${_id}`).then(res => res.json()).catch(err => console.log(err)).finally(() => setLoading(false));
+      const response = await fetch(`http://decora-backend.vercel.app/api/SingleProduct/${_id}`).then(res => res.json()).catch(err => console.log(err)).finally(() => setLoading(false));
       setProduct(response);
     })();
   }, [_id])

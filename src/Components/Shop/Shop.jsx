@@ -23,7 +23,7 @@ const Shop = () => {
       async () => {
         setLoading(true)
        
-          // let response = await fetch("http://localhost:5000/api/ProductsData", {
+          // let response = await fetch("http://decora-backend.vercel.app/api/ProductsData", {
           //   method: "POST",
           //   headers: {
           //     "Content-Type": "application/json"
@@ -33,7 +33,7 @@ const Shop = () => {
           // //setLoading(false);
           // console.log (response);
 
-        const response = await fetch('http://localhost:5000/api/ProductsData', {
+        const response = await fetch('http://decora-backend.vercel.app/api/ProductsData', {
             method: "POST",
             headers: {
               "Content-Type": "application/json"

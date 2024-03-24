@@ -15,7 +15,7 @@
 // // //   useEffect(() => {
 // // //     const fetchData = async () => {
 // // //       try {
-// // //         const response = await fetch(`http://localhost:5000/api/ARpage/${_id}`).then(res => res.json());
+// // //         const response = await fetch(`http://decora-backend.vercel.app/api/ARpage/${_id}`).then(res => res.json());
 // // //         setProduct(response);
 // // //       } catch (error) {
 // // //         console.error('Error fetching product:', error);
@@ -106,7 +106,7 @@
 //   useEffect(() => {
 //     const fetchData = async () => {
 //       try {
-//         const response = await fetch(`http://localhost:5000/api/ARpage/${_id}`).then(res => res.json());
+//         const response = await fetch(`http://decora-backend.vercel.app/api/ARpage/${_id}`).then(res => res.json());
 //         setProduct(response);
 //       } catch (error) {
 //         console.error('Error fetching product:', error);
@@ -155,7 +155,7 @@ export default function Model({ position }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/ARpage/${_id}`).then(res => res.json());
+        const response = await fetch(`http://decora-backend.vercel.app/api/ARpage/${_id}`).then(res => res.json());
         setProduct(response);
       } catch (error) {
         console.error('Error fetching product:', error);

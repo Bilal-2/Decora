@@ -115,9 +115,9 @@ mongoDB();
 
 // Use cors middleware with specific origin
 //Use cors middleware with specific origin
-app.use(cors({
-    origin: 'http://localhost:5173'
-}));
+// app.use(cors({
+//     origin: 'http://localhost:5173'
+// }));
 
 const conn = mongoose.connection;
 

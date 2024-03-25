@@ -92,7 +92,7 @@
 
 
 const express = require('express');
-//const cors = require('cors');
+const cors = require('cors');
 const upload = require('./Routes/3dModelUploadRoute');
 const mongoose = require('mongoose');
 const Grid = require('gridfs-stream');
@@ -114,10 +114,10 @@ mongoDB();
 //app.use(allowCors);
 
 // Use cors middleware with specific origin
-// Use cors middleware with specific origin
-// app.use(cors({
-//     origin: 'http://localhost:5173'
-// }));
+//Use cors middleware with specific origin
+app.use(cors({
+    origin: 'http://localhost:5173'
+}));
 
 const conn = mongoose.connection;
 

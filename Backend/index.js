@@ -111,12 +111,12 @@ mongoDB();
 
 
 // Apply CORS middleware to all routes
-//app.use(allowCors);
+app.use(allowCors);
 
 // Use cors middleware with specific origin
-app.use(cors({
-    origin: '*'
-}));
+// app.use(cors({
+//     origin: '*'
+// }));
 
 const conn = mongoose.connection;
 

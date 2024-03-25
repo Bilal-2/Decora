@@ -31,7 +31,7 @@ const StoreProvider = ({children}) => {
           
 
     
-            const response = await fetch('http://decora-backend.vercel.app/api/ProductsData', {
+            const response = await fetch('https://decora-backend.vercel.app/api/ProductsData', {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json"

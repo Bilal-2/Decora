@@ -10,6 +10,7 @@ const mongoDB = require('./db');
 const uploadRouter = require('./Middleware/upload');
 const singleProductRouter = require('./Routes/SingleProduct');
 const arPage = require('./Routes/ARpageRoute');
+const path = require('path');
 //const createuser = require('./Routes/CreateUser');
 //const allowCors = require('./Middleware/cors');
 
@@ -35,7 +36,7 @@ app.use('/upload', uploadRouter);
 app.use('/api', require('./Routes/CreateUser'));
 // Serve uploaded files at '/uploads' URL
 app.use('/uploads', express.static('uploads'));
-app.use('/Product_Images', express.static('Product_Images'));
+app.use('/Product_Images', express.static(path.join(__dirname, 'Product_Images')));
 app.use('/api', singleProductRouter)
 app.use('/api', arPage);
 //app.use('/file', upload);

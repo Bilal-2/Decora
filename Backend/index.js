@@ -35,7 +35,7 @@ app.use(cors({
 app.use('/upload', uploadRouter);
 app.use('/api', require('./Routes/CreateUser'));
 // Serve uploaded files at '/uploads' URL
-app.use('/uploads', express.static('uploads'));
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use('/Product_Images', express.static(path.join(__dirname, 'Product_Images')));
 app.use('/api', singleProductRouter)
 app.use('/api', arPage);

@@ -1,9 +1,9 @@
 [
     {
         "name": "Bean Bag",
-        "model" : "https://decora-backend.vercel.app/uploads/1710097641164-bean_bag.glb",
+        "model" : "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/1710097641164-bean_bag.glb",
         "price": 25999,
-        "image": "https://decora-backend.vercel.app/Product_Images/bean_bag.jpeg",
+        "image": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/bean_bag.jpeg",
         "colors": [
             "#ff0000",
             "#00ff00",
@@ -13,23 +13,23 @@
             {
                 "width": 1000,
                 "height": 667,
-                "url": "https://decora-backend.vercel.app/Product_Images/bean_bag.jpeg",
+                "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/bean_bag.jpeg",
                 "filename": "product-4.jpeg",
                 "size": 49641,
                 "type": "image/jpeg",
                 "thumbnails": {
                     "small": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/bean_bag.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/bean_bag.jpeg",
                         "width": 54,
                         "height": 36
                     },
                     "large": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/bean_bag.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/bean_bag.jpeg",
                         "width": 768,
                         "height": 512
                     },
                     "full": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/bean_bag.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/bean_bag.jpeg",
                         "width": 3000,
                         "height": 3000
                     }
@@ -145,9 +145,9 @@
     },
     {
         "name": "Astra 3seat Sofa",
-        "model" : "https://decora-backend.vercel.app/uploads/1710097669648-Astra+3seat+Cream.glb",
+        "model" : "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/1710097669648-Astra+3seat+Cream.glb",
         "price": 109999,
-        "image": "https://decora-backend.vercel.app/Product_Images/Astra_3seat_sofa.jpeg",
+        "image": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Astra_3seat_sofa.jpeg",
         "colors": [
             "#000",
             "#ffb900"
@@ -156,23 +156,23 @@
             {
                 "width": 1000,
                 "height": 667,
-                "url": "https://decora-backend.vercel.app/Product_Images/Astra_3seat_sofa.jpeg",
+                "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Astra_3seat_sofa.jpeg",
                 "filename": "product-4.jpeg",
                 "size": 49641,
                 "type": "image/jpeg",
                 "thumbnails": {
                     "small": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/Astra_3seat_sofa.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Astra_3seat_sofa.jpeg",
                         "width": 54,
                         "height": 36
                     },
                     "large": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/Astra_3seat_sofa.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Astra_3seat_sofa.jpeg",
                         "width": 768,
                         "height": 512
                     },
                     "full": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/Astra_3seat_sofa.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Astra_3seat_sofa.jpeg",
                         "width": 3000,
                         "height": 3000
                     }
@@ -287,9 +287,9 @@
     },
     {
         "name": "bedside table",
-        "model" : "https://decora-backend.vercel.app/uploads/1710097693056-bedsidetable.glb",
+        "model" : "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/1710097693056-bedsidetable.glb",
         "price": 309999,
-        "image": "https://decora-backend.vercel.app/Product_Images/bed_side_table.jpeg",
+        "image": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/bed_side_table.jpeg",
         "colors": [
             "#ffb900",
             "#0000ff"
@@ -298,23 +298,23 @@
             {
                 "width": 1000,
                 "height": 667,
-                "url": "https://decora-backend.vercel.app/Product_Images/bed_side_table.jpeg",
+                "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/bed_side_table.jpeg",
                 "filename": "product-4.jpeg",
                 "size": 49641,
                 "type": "image/jpeg",
                 "thumbnails": {
                     "small": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/bed_side_table.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/bed_side_table.jpeg",
                         "width": 54,
                         "height": 36
                     },
                     "large": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/bed_side_table.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/bed_side_table.jpeg",
                         "width": 768,
                         "height": 512
                     },
                     "full": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/bed_side_table.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/bed_side_table.jpeg",
                         "width": 3000,
                         "height": 3000
                     }
@@ -429,9 +429,9 @@
     },
     {
         "name": "bertoia chair",
-        "model" : "https://decora-backend.vercel.app/uploads/1710097714067-bertoia_chaise.glb",
+        "model" : "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/1710097714067-bertoia_chaise.glb",
         "price": 12599,
-        "image": "https://decora-backend.vercel.app/Product_Images/Bertoi_chaise.jpeg",
+        "image": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Bertoi_chaise.jpeg",
         "colors": [
             "#000",
             "#00ff00",
@@ -441,23 +441,23 @@
             {
                 "width": 1000,
                 "height": 667,
-                "url": "https://decora-backend.vercel.app/Product_Images/Bertoi_chaise.jpeg",
+                "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Bertoi_chaise.jpeg",
                 "filename": "product-4.jpeg",
                 "size": 49641,
                 "type": "image/jpeg",
                 "thumbnails": {
                     "small": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/Bertoi_chaise.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Bertoi_chaise.jpeg",
                         "width": 54,
                         "height": 36
                     },
                     "large": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/Bertoi_chaise.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Bertoi_chaise.jpeg",
                         "width": 768,
                         "height": 512
                     },
                     "full": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/Bertoi_chaise.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Bertoi_chaise.jpeg",
                         "width": 3000,
                         "height": 3000
                     }
@@ -573,9 +573,9 @@
     },
     {
         "name": "Brown Sofa",
-        "model" : "https://decora-backend.vercel.app/uploads/1710097735329-brown-sofa.glb",
+        "model" : "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/1710097735329-brown-sofa.glb",
         "price": 42999,
-        "image": "https://decora-backend.vercel.app/Product_Images/Brown_Sofa.jpeg",
+        "image": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Brown_Sofa.jpeg",
         "colors": [
             "#00ff00",
             "#0000ff",
@@ -585,23 +585,23 @@
             {
                 "width": 1000,
                 "height": 667,
-                "url": "https://decora-backend.vercel.app/Product_Images/Brown_Sofa.jpeg",
+                "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Brown_Sofa.jpeg",
                 "filename": "product-4.jpeg",
                 "size": 49641,
                 "type": "image/jpeg",
                 "thumbnails": {
                     "small": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/Brown_Sofa.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Brown_Sofa.jpeg",
                         "width": 54,
                         "height": 36
                     },
                     "large": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/Brown_Sofa.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Brown_Sofa.jpeg",
                         "width": 768,
                         "height": 512
                     },
                     "full": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/Brown_Sofa.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Brown_Sofa.jpeg",
                         "width": 3000,
                         "height": 3000
                     }
@@ -717,9 +717,9 @@
     },
     {
         "name": "Blue Chair",
-        "model" : "https://decora-backend.vercel.app/uploads/1710097750492-Buffet.glb",
+        "model" : "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/1710097750492-Buffet.glb",
         "price": 23999,
-        "image": "https://decora-backend.vercel.app/Product_Images/buffet_chair.jfif",
+        "image": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/buffet_chair.jfif",
         "colors": [
             "#0000ff",
             "#000"
@@ -728,23 +728,23 @@
             {
                 "width": 1000,
                 "height": 667,
-                "url": "https://decora-backend.vercel.app/Product_Images/buffet_chair.jfif",
+                "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/buffet_chair.jfif",
                 "filename": "product-4.jpeg",
                 "size": 49641,
                 "type": "image/jpeg",
                 "thumbnails": {
                     "small": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/buffet_chair.jfif",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/buffet_chair.jfif",
                         "width": 54,
                         "height": 36
                     },
                     "large": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/buffet_chair.jfif",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/buffet_chair.jfif",
                         "width": 768,
                         "height": 512
                     },
                     "full": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/buffet_chair.jfif",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/buffet_chair.jfif",
                         "width": 3000,
                         "height": 3000
                     }
@@ -860,9 +860,9 @@
     },
     {
         "name": "Blue Love Seat",
-        "model" : "https://decora-backend.vercel.app/uploads/1710097772441-Ceni_Lagoon_Blue_Loveseat.glb",
+        "model" : "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/1710097772441-Ceni_Lagoon_Blue_Loveseat.glb",
         "price": 39999,
-        "image": "https://decora-backend.vercel.app/Product_Images/Blue_loveseat.jpeg",
+        "image": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Blue_loveseat.jpeg",
         "featured": true,
         "colors": [
             "#000",
@@ -872,23 +872,23 @@
             {
                 "width": 1000,
                 "height": 667,
-                "url": "https://decora-backend.vercel.app/Product_Images/Blue_loveseat.jpeg",
+                "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Blue_loveseat.jpeg",
                 "filename": "product-4.jpeg",
                 "size": 49641,
                 "type": "image/jpeg",
                 "thumbnails": {
                     "small": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/Blue_loveseat.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Blue_loveseat.jpeg",
                         "width": 54,
                         "height": 36
                     },
                     "large": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/Blue_loveseat.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Blue_loveseat.jpeg",
                         "width": 768,
                         "height": 512
                     },
                     "full": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/Blue_loveseat.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Blue_loveseat.jpeg",
                         "width": 3000,
                         "height": 3000
                     }
@@ -1004,9 +1004,9 @@
     },
     {
         "name": "High Chair",
-        "model" : "https://decora-backend.vercel.app/uploads/1710097793280-highmodern.glb",
+        "model" : "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/1710097793280-highmodern.glb",
         "price": 20099,
-        "image": "https://decora-backend.vercel.app/Product_Images/High_modren.jpeg",
+        "image": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/High_modren.jpeg",
         "colors": [
             "#ff0000",
             "#ffb900",
@@ -1016,23 +1016,23 @@
             {
                 "width": 1000,
                 "height": 667,
-                "url": "https://decora-backend.vercel.app/Product_Images/High_modren.jpeg",
+                "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/High_modren.jpeg",
                 "filename": "product-4.jpeg",
                 "size": 49641,
                 "type": "image/jpeg",
                 "thumbnails": {
                     "small": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/High_modren.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/High_modren.jpeg",
                         "width": 54,
                         "height": 36
                     },
                     "large": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/High_modren.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/High_modren.jpeg",
                         "width": 768,
                         "height": 512
                     },
                     "full": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/High_modren.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/High_modren.jpeg",
                         "width": 3000,
                         "height": 3000
                     }
@@ -1147,9 +1147,9 @@
     },
     {
         "name": "Floar Lamp",
-        "model" : "https://decora-backend.vercel.app/uploads/1710097810641-Japanese+Floor+Lamp.glb",
+        "model" : "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/1710097810641-Japanese+Floor+Lamp.glb",
         "price": 99999,
-        "image": "https://decora-backend.vercel.app/Product_Images/Japneese_floor_lamp.jpeg",
+        "image": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Japneese_floor_lamp.jpeg",
         "colors": [
             "#00ff00",
             "#0000ff"
@@ -1158,23 +1158,23 @@
             {
                 "width": 1000,
                 "height": 667,
-                "url": "https://decora-backend.vercel.app/Product_Images/Japneese_floor_lamp.jpeg",
+                "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Japneese_floor_lamp.jpeg",
                 "filename": "product-4.jpeg",
                 "size": 49641,
                 "type": "image/jpeg",
                 "thumbnails": {
                     "small": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/Japneese_floor_lamp.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Japneese_floor_lamp.jpeg",
                         "width": 54,
                         "height": 36
                     },
                     "large": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/Japneese_floor_lamp.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Japneese_floor_lamp.jpeg",
                         "width": 768,
                         "height": 512
                     },
                     "full": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/Japneese_floor_lamp.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Japneese_floor_lamp.jpeg",
                         "width": 3000,
                         "height": 3000
                     }
@@ -1289,9 +1289,9 @@
     },
     {
         "name": "Leather Sofa",
-        "model" : "https://decora-backend.vercel.app/uploads/1710097832267-Leather+Sofa.glb",
+        "model" : "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/1710097832267-Leather+Sofa.glb",
         "price": 31999,
-        "image": "https://decora-backend.vercel.app/Product_Images/Leather_Sofa.jpeg",
+        "image": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Leather_Sofa.jpeg",
         "featured": true,
         "colors": [
             "#ffb900",
@@ -1302,23 +1302,23 @@
             {
                 "width": 1000,
                 "height": 667,
-                "url": "https://decora-backend.vercel.app/Product_Images/Leather_Sofa.jpeg",
+                "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Leather_Sofa.jpeg",
                 "filename": "product-4.jpeg",
                 "size": 49641,
                 "type": "image/jpeg",
                 "thumbnails": {
                     "small": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/Leather_Sofa.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Leather_Sofa.jpeg",
                         "width": 54,
                         "height": 36
                     },
                     "large": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/Leather_Sofa.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Leather_Sofa.jpeg",
                         "width": 768,
                         "height": 512
                     },
                     "full": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/Leather_Sofa.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Leather_Sofa.jpeg",
                         "width": 3000,
                         "height": 3000
                     }
@@ -1433,9 +1433,9 @@
     },
     {
         "name": "ottoman",
-        "model" : "https://decora-backend.vercel.app/uploads/1710097856132-Ottoman.glb",
+        "model" : "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/1710097856132-Ottoman.glb",
         "price": 30999,
-        "image": "https://decora-backend.vercel.app/Product_Images/ottoman.jpeg",
+        "image": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/ottoman.jpeg",
         "colors": [
             "#00ff00"
         ],
@@ -1443,23 +1443,23 @@
             {
                 "width": 1000,
                 "height": 667,
-                "url": "https://decora-backend.vercel.app/Product_Images/ottoman.jpeg",
+                "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/ottoman.jpeg",
                 "filename": "product-4.jpeg",
                 "size": 49641,
                 "type": "image/jpeg",
                 "thumbnails": {
                     "small": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/ottoman.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/ottoman.jpeg",
                         "width": 54,
                         "height": 36
                     },
                     "large": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/ottoman.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/ottoman.jpeg",
                         "width": 768,
                         "height": 512
                     },
                     "full": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/ottoman.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/ottoman.jpeg",
                         "width": 3000,
                         "height": 3000
                     }
@@ -1574,7 +1574,7 @@
     },
     {
         "name": "simple chair",
-        "model" : "https://decora-backend.vercel.app/uploads/1708109189543-Chair0.glb",
+        "model" : "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/1708109189543-Chair0.glb",
         "price": 109999,
         "image": "https://www.course-api.com/images/store/product-14.jpeg",
         "colors": [
@@ -1584,7 +1584,7 @@
             {
                 "width": 1000,
                 "height": 667,
-                "url": "https://decora-backend.vercel.app/Product_Images/product-14.jpeg",
+                "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/product-14.jpeg",
                 "filename": "product-4.jpeg",
                 "size": 49641,
                 "type": "image/jpeg",
@@ -1716,9 +1716,9 @@
     },
     {
         "name": "Small Table",
-        "model" : "https://decora-backend.vercel.app/uploads/1710097875990-small_table.glb",
+        "model" : "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/1710097875990-small_table.glb",
         "price": 129999,
-        "image": "https://decora-backend.vercel.app/Product_Images/small_table.jpeg",
+        "image": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/small_table.jpeg",
         "colors": [
             "#00ff00",
             "#ffb900"
@@ -1727,23 +1727,23 @@
             {
                 "width": 1000,
                 "height": 667,
-                "url": "https://decora-backend.vercel.app/Product_Images/small_table.jpeg",
+                "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/small_table.jpeg",
                 "filename": "product-4.jpeg",
                 "size": 49641,
                 "type": "image/jpeg",
                 "thumbnails": {
                     "small": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/small_table.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/small_table.jpeg",
                         "width": 54,
                         "height": 36
                     },
                     "large": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/small_table.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/small_table.jpeg",
                         "width": 768,
                         "height": 512
                     },
                     "full": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/small_table.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/small_table.jpeg",
                         "width": 3000,
                         "height": 3000
                     }
@@ -1859,9 +1859,9 @@
     },
     {
         "name": "Sofa",
-        "model" : "https://decora-backend.vercel.app/uploads/1710097951054-sofa.glb",
+        "model" : "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/1710097951054-sofa.glb",
         "price": 15999,
-        "image": "https://decora-backend.vercel.app/Product_Images/sofa.jpeg",
+        "image": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/sofa.jpeg",
         "colors": [
             "#ffb900"
         ],
@@ -1869,23 +1869,23 @@
             {
                 "width": 1000,
                 "height": 667,
-                "url": "https://decora-backend.vercel.app/Product_Images/sofa.jpeg",
+                "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/sofa.jpeg",
                 "filename": "product-4.jpeg",
                 "size": 49641,
                 "type": "image/jpeg",
                 "thumbnails": {
                     "small": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/sofa.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/sofa.jpeg",
                         "width": 54,
                         "height": 36
                     },
                     "large": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/sofa.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/sofa.jpeg",
                         "width": 768,
                         "height": 512
                     },
                     "full": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/sofa.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/sofa.jpeg",
                         "width": 3000,
                         "height": 3000
                     }
@@ -2000,9 +2000,9 @@
     },
     {
         "name": "Lilly Chair",
-        "model" : "https://decora-backend.vercel.app/uploads/1710098029311-Lilly_chair.glb",
+        "model" : "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/1710098029311-Lilly_chair.glb",
         "price": 79999,
-        "image": "https://decora-backend.vercel.app/Product_Images/Huge_Chair.jpeg",
+        "image": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Huge_Chair.jpeg",
         "featured": true,
         "colors": [
             "#ff0000",
@@ -2012,23 +2012,23 @@
             {
                 "width": 1000,
                 "height": 667,
-                "url": "https://decora-backend.vercel.app/Product_Images/Huge_Chair.jpeg",
+                "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Huge_Chair.jpeg",
                 "filename": "product-4.jpeg",
                 "size": 49641,
                 "type": "image/jpeg",
                 "thumbnails": {
                     "small": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/Huge_Chair.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Huge_Chair.jpeg",
                         "width": 54,
                         "height": 36
                     },
                     "large": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/Huge_Chair.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Huge_Chair.jpeg",
                         "width": 768,
                         "height": 512
                     },
                     "full": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/Huge_Chair.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Huge_Chair.jpeg",
                         "width": 3000,
                         "height": 3000
                     }
@@ -2143,9 +2143,9 @@
     },
     {
         "name": "Vase",
-        "model" : "https://decora-backend.vercel.app/uploads/1710098084088-vase.glb",
+        "model" : "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/1710098084088-vase.glb",
         "price": 120999,
-        "image": "https://decora-backend.vercel.app/Product_Images/vase.jpeg",
+        "image": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/vase.jpeg",
         "featured": true,
         "colors": [
             "#ff0000"
@@ -2154,23 +2154,23 @@
             {
                 "width": 1000,
                 "height": 667,
-                "url": "https://decora-backend.vercel.app/Product_Images/vase.jpeg",
+                "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/vase.jpeg",
                 "filename": "product-4.jpeg",
                 "size": 49641,
                 "type": "image/jpeg",
                 "thumbnails": {
                     "small": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/vase.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/vase.jpeg",
                         "width": 54,
                         "height": 36
                     },
                     "large": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/vase.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/vase.jpeg",
                         "width": 768,
                         "height": 512
                     },
                     "full": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/vase.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/vase.jpeg",
                         "width": 3000,
                         "height": 3000
                     }
@@ -2285,9 +2285,9 @@
     },
     {
         "name": "Standing table",
-        "model" : "https://decora-backend.vercel.app/uploads/1710098062851-standing_table.glb",
+        "model" : "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/1710098062851-standing_table.glb",
         "price": 250099,
-        "image": "https://decora-backend.vercel.app/Product_Images/Standing_Table.jpeg",
+        "image": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Standing_Table.jpeg",
         "colors": [
             "#000",
             "#ffb900"
@@ -2296,23 +2296,23 @@
             {
                 "width": 1000,
                 "height": 667,
-                "url": "https://decora-backend.vercel.app/Product_Images/Standing_Table.jpeg",
+                "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Standing_Table.jpeg",
                 "filename": "product-4.jpeg",
                 "size": 49641,
                 "type": "image/jpeg",
                 "thumbnails": {
                     "small": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/Standing_Table.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Standing_Table.jpeg",
                         "width": 54,
                         "height": 36
                     },
                     "large": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/Standing_Table.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Standing_Table.jpeg",
                         "width": 768,
                         "height": 512
                     },
                     "full": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/Standing_Table.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/Standing_Table.jpeg",
                         "width": 3000,
                         "height": 3000
                     }
@@ -2427,9 +2427,9 @@
     },
     {
         "name": "Outdoor Chair",
-        "model" : "https://decora-backend.vercel.app/uploads/1710098115018-outdoor_chair.glb",
+        "model" : "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/1710098115018-outdoor_chair.glb",
         "price": 150999,
-        "image": "https://decora-backend.vercel.app/Product_Images/outdoor_chair.jpeg",
+        "image": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/outdoor_chair.jpeg",
         "colors": [
             "#000"
         ],
@@ -2437,23 +2437,23 @@
             {
                 "width": 1000,
                 "height": 667,
-                "url": "https://decora-backend.vercel.app/Product_Images/outdoor_chair.jpeg",
+                "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/outdoor_chair.jpeg",
                 "filename": "product-4.jpeg",
                 "size": 49641,
                 "type": "image/jpeg",
                 "thumbnails": {
                     "small": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/outdoor_chair.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/outdoor_chair.jpeg",
                         "width": 54,
                         "height": 36
                     },
                     "large": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/outdoor_chair.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/outdoor_chair.jpeg",
                         "width": 768,
                         "height": 512
                     },
                     "full": {
-                        "url": "https://decora-backend.vercel.app/Product_Images/outdoor_chair.jpeg",
+                        "url": "https://raw.githubusercontent.com/Bilal-2/Decora/main/Backend/outdoor_chair.jpeg",
                         "width": 3000,
                         "height": 3000
                     }

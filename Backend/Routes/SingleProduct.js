@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const ObjectId = mongoose.Types.ObjectId;
 
 
-router.get('/SingleProdeuct/:id', async (req, res) => {
+router.get('/SingleProduct/:id', async (req, res) => {
   try {
     //await connectDB();
     const fetch_Products = mongoose.connection.db.collection('ProductsData');

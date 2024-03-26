@@ -1,5 +1,12 @@
 const express = require('express');
 const cors = require('cors');
+const corsConfig = {
+    origin: '*',
+    methods: ['GET, POST, PUT, DELETE'],
+    Credentials: true
+}
+app.use(cors(corsConfig));
+app.options('*', cors(corsConfig));
 //const upload = require('./Routes/3dModelUploadRoute');
 //const mongoose = require('mongoose');
 //const Grid = require('gridfs-stream');
@@ -23,9 +30,7 @@ mongoDB();
 
 // Use cors middleware with specific origin
 //Use cors middleware with specific origin
-app.use(cors({
-    origin: '*'
-}));
+
 
 //const conn = mongoose.connection;
 

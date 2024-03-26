@@ -1,13 +1,13 @@
 const express = require('express');
 const cors = require('cors');
-const corsConfig = {
-    origin: '*',
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Corrected methods
-    credentials: true // Corrected property name
-};
+// const corsConfig = {
+//     origin: '*',
+//     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Corrected methods
+//     credentials: true // Corrected property name
+// };
 
-app.use(cors(corsConfig));
-app.options('*', cors(corsConfig))
+// app.use(cors(corsConfig));
+// app.options('*', cors(corsConfig))
 //const upload = require('./Routes/3dModelUploadRoute');
 //const mongoose = require('mongoose');
 //const Grid = require('gridfs-stream');
@@ -25,7 +25,11 @@ const path = require('path');
 //let gfs;
 mongoDB();
 //HELO
-
+app.use(cors(
+    {
+        origin: '*'
+    }
+));
 // Apply CORS middleware to all routes
 //app.use(allowCors);
 

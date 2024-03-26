@@ -7,11 +7,17 @@
 Currently:
 
    -> Successfully implemented AR Functionality On Frontend.
+   
    -> 3D viewr Functionality Implemented.
+   
    -> Storing 3D models in Server.
+   
    -> Fetching 3D models from mongodb and displaying it on frontend.
+   
    -> Other Customer Side Frontend.
+   
    -> Fetching Products form mongoDB and displaying it on Frontend.
+   
 
 To Be Done: 
 

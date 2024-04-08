@@ -1,7 +1,7 @@
 {
-  "name": "MERN e-commerce",
+  "name": "Decora",
   "version": "1.0.0",
-  "description": "MERN Stack E-Commerce Project",
+  "description": "Decora",
   "main": "index.js",
   "type": "module",
   "scripts": {

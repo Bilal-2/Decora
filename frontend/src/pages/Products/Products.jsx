@@ -150,7 +150,7 @@ const Product = () => {
               <button
                 onClick={addToCartHandler}
                 disabled={product.countInStock === 0}
-                className="bg-pink-600 text-white py-2 px-4 rounded-lg"
+                className="bg-[#9f5e1d] hover:bg-[#6f3914] text-white py-2 px-4 rounded-lg"
               >
                 Add To Cart
               </button>

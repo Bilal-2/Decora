@@ -37,6 +37,8 @@ import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import AdminDashboard from "./pages/Admin/AdminDashboard.jsx";
 
 import XRModelContainer from "./AR Component/XRModelContainer.jsx";
+import AboutUs from "./pages/AboutUs.jsx"
+import ContactUs from "./pages/ContactUs.jsx";
 //import Model from "./AR Component/Model.jsx";
 
 const router = createBrowserRouter(
@@ -49,6 +51,8 @@ const router = createBrowserRouter(
       <Route path="/product/:id" element={<ProductDetails />} />
       <Route path="/cart" element={<Cart />} />
       <Route path="/shop" element={<Shop />} />
+      <Route path="/aboutus" element={<AboutUs />} />
+      <Route path="/contactus" element={<ContactUs />} />
       <Route path="/AR/:id" element={<XRModelContainer />} />
       {/* <Route path="/Model/:id" element={<Model />} /> */}
 

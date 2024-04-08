@@ -98,14 +98,14 @@ const Profile = () => {
             <div className="flex justify-between">
               <button
                 type="submit"
-                className="bg-pink-500 text-white py-2 px-4 rounded hover:bg-pink-600"
+                className="bg-[#9f5e1d] hover:bg-[#6f3914] text-white py-2 px-4 rounded "
               >
                 Update
               </button>
 
               <Link
                 to="/user-orders"
-                className="bg-pink-600 text-white py-2 px-4 rounded hover:bg-pink-700"
+                className=" text-white py-2 px-4 rounded bg-[#9f5e1d] hover:bg-[#6f3914]"
               >
                 My Orders
               </Link>

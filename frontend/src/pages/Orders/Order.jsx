@@ -143,26 +143,26 @@ const Order = () => {
         <div className="mt-5 border-gray-300 pb-4 mb-4">
           <h2 className="text-xl font-bold mb-2">Shipping</h2>
           <p className="mb-4 mt-4">
-            <strong className="text-pink-500">Order:</strong> {order._id}
+            <strong className="text-[#9f5e1d]">Order:</strong> {order._id}
           </p>
 
           <p className="mb-4">
-            <strong className="text-pink-500">Name:</strong>{" "}
+            <strong className="text-[#9f5e1d]">Name:</strong>{" "}
             {order.user.username}
           </p>
 
           <p className="mb-4">
-            <strong className="text-pink-500">Email:</strong> {order.user.email}
+            <strong className="text-[#9f5e1d]">Email:</strong> {order.user.email}
           </p>
 
           <p className="mb-4">
-            <strong className="text-pink-500">Address:</strong>{" "}
+            <strong className="text-[#9f5e1d]">Address:</strong>{" "}
             {order.shippingAddress.address}, {order.shippingAddress.city}{" "}
             {order.shippingAddress.postalCode}, {order.shippingAddress.country}
           </p>
 
           <p className="mb-4">
-            <strong className="text-pink-500">Method:</strong>{" "}
+            <strong className="text-[#9f5e1d]">Method:</strong>{" "}
             {order.paymentMethod}
           </p>
 
@@ -204,7 +204,7 @@ const Order = () => {
                   <button
                   onClick={createOrder}
                   
-              className="bg-pink-500 text-white px-4 py-2 rounded cursor-pointer my-[1rem]"
+              className="bg-[#9f5e1d] hover:bg-[#6f3914] text-white px-4 py-2 rounded cursor-pointer my-[1rem]"
             >
               Credit card
             </button>
@@ -225,7 +225,7 @@ const Order = () => {
           <div>
             <button
               type="button"
-              className="bg-pink-500 text-white w-full py-2"
+              className="bg-[#9f5e1d] hover:bg-[#6f3914] text-white w-full py-2"
               onClick={deliverHandler}
             >
               Mark As Delivered

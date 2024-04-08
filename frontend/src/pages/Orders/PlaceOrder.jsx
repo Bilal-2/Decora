@@ -49,6 +49,7 @@ const PlaceOrder = () => {
         {cart.cartItems.length === 0 ? (
           <Message>Your cart is empty</Message>
         ) : (
+          <>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse">
               <thead>
@@ -85,74 +86,74 @@ const PlaceOrder = () => {
               </tbody>
             </table>
           </div>
-        )}
-        <div className="lg:relative w-full p-3">
-          <div className="lg:absolute lg:top-0 lg:right-0 lg:mt-8 mt-4 border-black lg:border-3 border-2 rounded-xl p-4 lg:w-[40rem] ">
-            <h2 className="text-2xl font-semibold mb-5">Order Summary</h2>
-            <div className="flex justify-between flex-col gap-3 flex-wrap p-8  ">
-              <div className="flex gap-6">
-                <ul className="text-lg">
-                  <li>
-                    <span className="font-semibold mb-4">Items:</span>
-                  </li>
-                  <li>
-                    <span className="font-semibold mb-4">Shipping:</span>
-                  </li>
-                  <li>
-                    <span className="font-semibold mb-4">Tax:</span>
-                  </li>
-                  <li>
-                    <span className="font-semibold mb-4">Total:</span>
-                  </li>
-                </ul>
+        
+        <div className="flex w-full lg:justify-end md:justify-end sm:justify-end xl:justify-end">
+          <div className=" w-full lg:w-min p-3 ">
+            <div className=" lg:mt-8 mt-4 border-black lg:border-3 border-2 rounded-xl p-4 lg:w-[40rem] ">
+              <h2 className="text-2xl font-semibold mb-5">Order Summary</h2>
+              <div className="flex justify-between flex-col gap-3 flex-wrap p-8  ">
+                <div className="flex gap-6">
+                  <ul className="text-lg">
+                    <li>
+                      <span className="font-semibold mb-4">Items:</span>
+                    </li>
+                    <li>
+                      <span className="font-semibold mb-4">Shipping:</span>
+                    </li>
+                    <li>
+                      <span className="font-semibold mb-4">Tax:</span>
+                    </li>
+                    <li>
+                      <span className="font-semibold mb-4">Total:</span>
+                    </li>
+                  </ul>
 
-                <ul className="text-lg">
-                  <li>
-                     Rs {cart.itemsPrice}
-                  </li>
-                  <li>
-                     Rs {cart.shippingPrice}
-                  </li>
-                  <li>
-                     Rs {cart.taxPrice}
-                  </li>
-                  <li>
-                    Rs {cart.totalPrice}
-                  </li>
-                </ul>
-              </div>
-              {error && (
-                <Message variant="danger">{error.data.message}</Message>
-              )}
+                  <ul className="text-lg">
+                    <li>Rs {cart.itemsPrice}</li>
+                    <li>Rs {cart.shippingPrice}</li>
+                    <li>Rs {cart.taxPrice}</li>
+                    <li>Rs {cart.totalPrice}</li>
+                  </ul>
+                </div>
+                {error && (
+                  <Message variant="danger">{error.data.message}</Message>
+                )}
 
-              <div>
-                <h2 className="text-2xl font-semibold mb-4">Shipping</h2>
-                <p>
-                  <strong>Address:</strong> {cart.shippingAddress.address},{" "}
-                  {cart.shippingAddress.city} {cart.shippingAddress.postalCode},{" "}
-                  {cart.shippingAddress.country}
-                </p>
+                <div>
+                  <h2 className="text-2xl font-semibold mb-4">Shipping</h2>
+                  <p>
+                    <strong>Address:</strong> {cart.shippingAddress.address},{" "}
+                    {cart.shippingAddress.city}{" "}
+                    {cart.shippingAddress.postalCode},{" "}
+                    {cart.shippingAddress.country}
+                  </p>
+                </div>
+
+                <div>
+                  <h2 className="text-2xl font-semibold mb-4">
+                    Payment Method
+                  </h2>
+                  <strong>Method:</strong> {cart.paymentMethod}
+                </div>
               </div>
 
-              <div>
-                <h2 className="text-2xl font-semibold mb-4">Payment Method</h2>
-                <strong>Method:</strong> {cart.paymentMethod}
-              </div>
+              <button
+                type="button"
+                className="bg-[#9f5e1d] hover:bg-[#6f3914] text-white py-2 px-4 rounded-full text-lg w-full mt-4"
+                disabled={cart.cartItems === 0}
+                onClick={placeOrderHandler}
+              >
+                Place Order
+              </button>
+
+              {isLoading && <Loader />}
             </div>
-
-            <button
-              type="button"
-              className="bg-pink-500 text-white py-2 px-4 rounded-full text-lg w-full mt-4"
-              disabled={cart.cartItems === 0}
-              onClick={placeOrderHandler}
-            >
-              Place Order
-            </button>
-
-            {isLoading && <Loader />}
           </div>
         </div>
+        </>
+        )}
       </div>
+      
     </>
   );
 };

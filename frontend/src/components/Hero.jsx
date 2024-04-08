@@ -97,9 +97,9 @@ const Hero = () => {
               <h1 className="md:text-7xl text-6xl font-bold leading-tight text-black">
                 Future <br /> of furniture
               </h1>
-              <p className="my-4">
-                Frontend design involves creating the HTML, CSS, and
-                presentational JavaScript code that
+              <p className="my-4 text-gray-500">
+              Transform your home with timeless elegance and comfort. 
+              iscover our exquisite furniture collection today.
               </p>
               <div className="w-[95%] md:w-full">
                 <form className="flex border border-black">

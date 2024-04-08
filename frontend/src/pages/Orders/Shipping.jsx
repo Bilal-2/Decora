@@ -93,7 +93,7 @@ const Shipping = () => {
               <label className="inline-flex items-center">
                 <input
                   type="radio"
-                  className="form-radio text-pink-500"
+                  className="form-radio text-[#9f5e1d] "
                   name="paymentMethod"
                   value="Credit Card"
                   checked={paymentMethod === "Credit Card"}
@@ -104,7 +104,7 @@ const Shipping = () => {
 
                 <input
                   type="radio"
-                  className="form-radio text-pink-500 ml-8"
+                  className="form-radio text-[#9f5e1d]  ml-8"
                   name="paymentMethod"
                   value="Cash On Dilevery"
                   checked={paymentMethod === "Cash On Dilevery"}
@@ -116,7 +116,7 @@ const Shipping = () => {
           </div>
 
           <button
-            className="bg-pink-500 text-white py-2 px-4 rounded-full text-lg w-full"
+            className="bg-[#9f5e1d] hover:bg-[#6f3914] text-white py-2 px-4 rounded-full text-lg w-full"
             type="submit"
           >
             Continue

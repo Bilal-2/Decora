@@ -67,8 +67,8 @@ const ProductList = () => {
   };
 
   return (
-    <div className="container xl:mx-[9rem] sm:mx-[0]">
-      <div className="flex flex-col md:flex-row">
+    <div className="container  sm:mx-[0]">
+      <div className="lg:flex md:flex sm:flex  justify-center items-center ">
         <AdminMenu />
         <div className="md:w-3/4 p-3">
           <div className="h-12">Create Product</div>
@@ -97,9 +97,23 @@ const ProductList = () => {
             </label>
           </div>
 
-          <div className="p-3">
-            <div className="flex flex-wrap">
-              <div className="one">
+          {/* <div className="mb-3">
+            <label className="border text-white px-4 block w-full text-center rounded-lg cursor-pointer font-bold py-11">
+              {image ? image.name : "Upload 3D Model"}
+
+              <input
+                type="file"
+                name="image"
+                accept="image/*"
+                onChange={uploadFileHandler}
+                className={!image ? "hidden" : "text-white"}
+              />
+            </label>
+          </div> */}
+
+          <div className="w-min ">
+            <div className="flex flex-wrap flex-row gap-3 bg-transparent  lg:w-min md:w-min sm:w-min   shadow-xl rounded-xl hover:shadow-inner p-4 m-4">
+              <div className="one w-full">
                 <label htmlFor="name">Name</label> <br />
                 <input
                   type="text"
@@ -108,7 +122,7 @@ const ProductList = () => {
                   onChange={(e) => setName(e.target.value)}
                 />
               </div>
-              <div className="two ml-10 ">
+              <div className="two  ">
                 <label htmlFor="name block">Price</label> <br />
                 <input
                   type="number"
@@ -117,8 +131,7 @@ const ProductList = () => {
                   onChange={(e) => setPrice(e.target.value)}
                 />
               </div>
-            </div>
-            <div className="flex flex-wrap">
+            
               <div className="one">
                 <label htmlFor="name block">Quantity</label> <br />
                 <input
@@ -128,7 +141,7 @@ const ProductList = () => {
                   onChange={(e) => setQuantity(e.target.value)}
                 />
               </div>
-              <div className="two ml-10 ">
+              <div className="two  ">
                 <label htmlFor="name block">Brand</label> <br />
                 <input
                   type="text"
@@ -137,19 +150,19 @@ const ProductList = () => {
                   onChange={(e) => setBrand(e.target.value)}
                 />
               </div>
-            </div>
+            
 
             <label htmlFor="" className="my-5">
               Description
             </label>
             <textarea
               type="text"
-              className="p-2 mb-3 bg-[#101011] border rounded-lg w-[95%] text-white"
+              className="p-2 mb-3 bg-[#101011] border rounded-lg w-full text-white h-[10rem]"
               value={description}
               onChange={(e) => setDescription(e.target.value)}
             ></textarea>
 
-            <div className="flex justify-between">
+            
               <div>
                 <label htmlFor="name block">Count In Stock</label> <br />
                 <input
@@ -178,7 +191,7 @@ const ProductList = () => {
 
             <button
               onClick={handleSubmit}
-              className="py-4 px-10 mt-5 rounded-lg text-lg font-bold bg-pink-600"
+              className="py-4 px-10 mt-5 rounded-lg text-lg font-bold bg-[#9f5e1d] hover:bg-[#6f3914]"
             >
               Submit
             </button>

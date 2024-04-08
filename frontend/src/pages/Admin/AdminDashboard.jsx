@@ -95,7 +95,7 @@ const AdminDashboard = () => {
       <section className="xl:ml-[4rem] md:ml-[0rem] mx-[2rem]  ">
         <div className="w-[80%] flex justify-around flex-wrap">
           <div className="rounded-lg bg-black p-5 w-[20rem] mt-5">
-            <div className="font-bold rounded-full w-[3rem] bg-pink-500 text-center p-3">
+            <div className="font-bold rounded-full w-[3rem] bg-[#9f5e1d] text-center p-3">
               $
             </div>
 
@@ -105,7 +105,7 @@ const AdminDashboard = () => {
             </h1>
           </div>
           <div className="rounded-lg bg-black p-5 w-[20rem] mt-5">
-            <div className="font-bold rounded-full w-[3rem] bg-pink-500 text-center p-3">
+            <div className="font-bold rounded-full w-[3rem] bg-[#9f5e1d] text-center p-3">
               $
             </div>
 
@@ -115,7 +115,7 @@ const AdminDashboard = () => {
             </h1>
           </div>
           <div className="rounded-lg bg-black p-5 w-[20rem] mt-5">
-            <div className="font-bold rounded-full w-[3rem] bg-pink-500 text-center p-3">
+            <div className="font-bold rounded-full w-[3rem] bg-[#9f5e1d] text-center p-3">
               $
             </div>
 
@@ -126,17 +126,18 @@ const AdminDashboard = () => {
           </div>
         </div>
 
-        <div className="lg:ml-[10rem] lg:mt-[4rem]">
+        <div className="lg:ml-[10rem] lg:mt-[4rem] mt-[2rem]">
           <Chart
             options={state.options}
             series={state.series}
             type="bar"
+
             
-            className="w-full lg:w-[70%]"
+            className="w-full lg:w-[70%] bg-[#979470] rounded-lg lg:p-5 p-3 shadow-lg"
           />
         </div>
 
-        <div className="mt-[4rem]">
+        <div className="my-[4rem] bg-[#d8c8a0] p-5 rounded-lg shadow-lg ">
           <OrderList />
         </div>
       </section>

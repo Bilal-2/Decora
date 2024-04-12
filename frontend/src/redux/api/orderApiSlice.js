@@ -17,13 +17,32 @@ export const orderApiSlice = apiSlice.injectEndpoints({
       }),
     }),
 
+    // payOrder: builder.mutation({
+    //   query: ({ orderId, details }) => ({
+    //     url: `${ORDERS_URL}/${orderId}/pay`,
+    //     method: "PUT",
+    //     body: details,
+
+        
+    //   }
+    //   console.log("details", details);
+    //   console.log("orderId", orderId);
+    //   ),
+    // }
+    // ),
+
     payOrder: builder.mutation({
-      query: ({ orderId, details }) => ({
-        url: `${ORDERS_URL}/${orderId}/pay`,
-        method: "PUT",
-        body: details,
-      }),
+      query: ({ orderId, details }) => {
+        console.log("details1", details);
+        console.log("orderId1", orderId);
+        return {
+          url: `${ORDERS_URL}/${orderId}/pay`,
+          method: "PUT",
+          body: details,
+        };
+      },
     }),
+    
 
     getPaypalClientId: builder.query({
       query: () => ({

@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import {
   useCreateProductMutation,
   useUploadProductImageMutation,
+  useUploadProductModelMutation,
 } from "../../redux/api/productApiSlice";
 import { useFetchCategoriesQuery } from "../../redux/api/categoryApiSlice";
 import { toast } from "react-toastify";
@@ -10,6 +11,7 @@ import AdminMenu from "./AdminMenu";
 
 const ProductList = () => {
   const [image, setImage] = useState("");
+  const [model, setModel] = useState("");
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [price, setPrice] = useState("");
@@ -18,9 +20,11 @@ const ProductList = () => {
   const [brand, setBrand] = useState("");
   const [stock, setStock] = useState(0);
   const [imageUrl, setImageUrl] = useState(null);
+  const [modelUrl, setModelUrl] = useState(null);
   const navigate = useNavigate();
 
   const [uploadProductImage] = useUploadProductImageMutation();
+  const [uploadProductModel] = useUploadProductModelMutation();
   const [createProduct] = useCreateProductMutation();
   const { data: categories } = useFetchCategoriesQuery();
 
@@ -30,6 +34,7 @@ const ProductList = () => {
     try {
       const productData = new FormData();
       productData.append("image", image);
+      productData.append("model", model);
       productData.append("name", name);
       productData.append("description", description);
       productData.append("price", price);
@@ -41,9 +46,11 @@ const ProductList = () => {
       const { data } = await createProduct(productData);
 
       if (data.error) {
-        toast.error("Product create failed. Try Again.");
+        toast.error("Product create failed. Try Again.", data.error);
       } else {
         toast.success(`${data.name} is created`);
+        console.log(data);
+        console.log(data.error);
         navigate("/");
       }
     } catch (error) {
@@ -61,6 +68,21 @@ const ProductList = () => {
       toast.success(res.message);
       setImage(res.image);
       setImageUrl(res.image);
+    } catch (error) {
+      toast.error(error?.data?.message || error.error);
+    }
+  };
+
+  const uploadModelHandler = async (e) => {
+    const formData = new FormData();
+    formData.append("model", e.target.files[0]);
+    try {
+      const res = await uploadProductModel(formData).unwrap();
+      console.log("res ",res);
+      console.log("model", res.model);
+      toast.success(res.message);
+      setModel(res.model);
+      setModelUrl(res.model);
     } catch (error) {
       toast.error(error?.data?.message || error.error);
     }
@@ -89,7 +111,7 @@ const ProductList = () => {
 
               <input
                 type="file"
-                name="image"
+                name="model"
                 accept="image/*"
                 onChange={uploadFileHandler}
                 className={!image ? "hidden" : "text-white"}
@@ -97,19 +119,18 @@ const ProductList = () => {
             </label>
           </div>
 
-          {/* <div className="mb-3">
+          <div className="mb-3">
             <label className="border text-white px-4 block w-full text-center rounded-lg cursor-pointer font-bold py-11">
-              {image ? image.name : "Upload 3D Model"}
-
+              {model ? model.name : "Upload 3D Model"}
               <input
                 type="file"
                 name="image"
-                accept="image/*"
-                onChange={uploadFileHandler}
-                className={!image ? "hidden" : "text-white"}
+                accept="*" // accept=".glb, .gltf"
+                onChange={uploadModelHandler}
+                className={!model ? "hidden" : "text-white"}
               />
             </label>
-          </div> */}
+          </div>
 
           <div className="w-min ">
             <div className="flex flex-wrap flex-row gap-3 bg-transparent  lg:w-min md:w-min sm:w-min   shadow-xl rounded-xl hover:shadow-inner p-4 m-4">
@@ -131,7 +152,7 @@ const ProductList = () => {
                   onChange={(e) => setPrice(e.target.value)}
                 />
               </div>
-            
+
               <div className="one">
                 <label htmlFor="name block">Quantity</label> <br />
                 <input
@@ -150,19 +171,17 @@ const ProductList = () => {
                   onChange={(e) => setBrand(e.target.value)}
                 />
               </div>
-            
 
-            <label htmlFor="" className="my-5">
-              Description
-            </label>
-            <textarea
-              type="text"
-              className="p-2 mb-3 bg-[#101011] border rounded-lg w-full text-white h-[10rem]"
-              value={description}
-              onChange={(e) => setDescription(e.target.value)}
-            ></textarea>
+              <label htmlFor="" className="my-5">
+                Description
+              </label>
+              <textarea
+                type="text"
+                className="p-2 mb-3 bg-[#101011] border rounded-lg w-full text-white h-[10rem]"
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
+              ></textarea>
 
-            
               <div>
                 <label htmlFor="name block">Count In Stock</label> <br />
                 <input

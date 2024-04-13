@@ -1,4 +1,4 @@
-import { PRODUCT_URL, UPLOAD_URL } from "../constants";
+import { PRODUCT_URL, UPLOAD_URL, UPLOAD_MODEL_URL } from "../constants";
 import { apiSlice } from "./apiSlice";
 
 export const productApiSlice = apiSlice.injectEndpoints({
@@ -31,7 +31,9 @@ export const productApiSlice = apiSlice.injectEndpoints({
     }),
 
     createProduct: builder.mutation({
-      query: (productData) => ({
+      query: (productData) => (
+        console.log("productData",productData),
+        {
         url: `${PRODUCT_URL}`,
         method: "POST",
         body: productData,
@@ -54,6 +56,27 @@ export const productApiSlice = apiSlice.injectEndpoints({
         body: data,
       }),
     }),
+
+    uploadProductModel: builder.mutation({
+      query: (data) => (
+        console.log("data",data),
+        console.log("uploading yakki",UPLOAD_MODEL_URL),
+
+        {
+        url: `${UPLOAD_MODEL_URL}`,
+        method: "POST",
+        body: data,
+      }
+      ),
+      
+      onError: (error) => {
+        // Handle the error here, for example:
+        console.log('An error occurred while uploading the model:', error);
+        // Optionally, you can rethrow the error to propagate it to the caller
+        throw error;
+      },
+      
+    }),    
 
     deleteProduct: builder.mutation({
       query: (productId) => ({
@@ -103,5 +126,6 @@ export const {
   useGetTopProductsQuery,
   useGetNewProductsQuery,
   useUploadProductImageMutation,
+  useUploadProductModelMutation,
   useGetFilteredProductsQuery,
 } = productApiSlice;

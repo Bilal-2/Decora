@@ -143,13 +143,13 @@ const Order = () => {
   ) : (
     <div className="container flex flex-col lg:flex-row md:flex-row lg:mx-[2rem] md:mx-[2rem] ">
       <div className="lg:w-2/3 lg:pr-4 p-2 ">
-        <div className="border gray-300 mt-5 pb-4 mb-5">
+        <div className=" mt-5 pb-4 mb-5">
           {order.orderItems.length === 0 ? (
             <Messsage>Order is empty</Messsage>
           ) : (
-            <div className="overflow-x-auto">
-              <table className="lg:w-[80%]">
-                <thead className="border-b-2">
+            <div className="overflow-x-auto ">
+              <table className="lg:w-[80%] border-2 border-black">
+                <thead className="border-b-2 border-black ">
                   <tr>
                     <th className="p-2">Image</th>
                     <th className="p-2">Product</th>
@@ -189,7 +189,7 @@ const Order = () => {
       </div>
 
       <div className="md:w-1/3 p-2 ">
-        <div className="mt-5 border-gray-300 pb-4 mb-4">
+        <div className="mt-5   pb-4 mb-4">
           <h2 className="text-xl font-bold mb-2">Shipping</h2>
           <p className="mb-4 mt-4">
             <strong className="text-[#9f5e1d]">Order:</strong> {order._id}
@@ -217,7 +217,7 @@ const Order = () => {
           </p>
 
           {order.isPaid ? (
-            <Messsage className="w-auto" variant="success">
+            <Messsage className="w-auto" variant="succcess">
               Paid on {order.paidAt}
             </Messsage>
           ) : (
@@ -234,6 +234,7 @@ const Order = () => {
         </div>
         <div className="flex justify-between mb-2">
           <span>Shipping</span>
+          {console.log(order.shippingPrice)}
           <span>Rs {order.shippingPrice}</span>
         </div>
         <div className="flex justify-between mb-2">
@@ -262,7 +263,7 @@ const Order = () => {
         {userInfo && !userInfo.isAdmin && order.createdAt !== "" && (
           <>
             <Link to="/user-orders">
-              <button className="bg-[#9f5e1d] hover:bg-[#6f3914] text-white px-4 py-2 rounded cursor-pointer my-[1rem]">
+              <button className="text-white bg-[#645832] hover:bg-[#5c4d1c] px-4 py-2 rounded cursor-pointer my-[1rem]">
                 MY ORDERS
               </button>
             </Link>
@@ -306,7 +307,7 @@ const Order = () => {
             <div>
               <button
                 type="button"
-                className="bg-[#9f5e1d] hover:bg-[#6f3914] text-white w-full py-2"
+                className="bg-[#645832] hover:bg-[#5c4d1c] text-white w-full py-2"
                 onClick={() =>
                   handlePay(order._id, {
                     id: userInfo._id,
@@ -324,7 +325,7 @@ const Order = () => {
           <div>
             <button
               type="button"
-              className="bg-[#9f5e1d] hover:bg-[#6f3914] text-white w-full py-2"
+              className="bg-[#645832] hover:bg-[#5c4d1c] text-white w-full py-2"
               onClick={deliverHandler}
             >
               Mark As Delivered

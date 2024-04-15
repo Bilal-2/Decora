@@ -17,14 +17,14 @@ const ProductCard = ({ p }) => {
   };
 
   return (
-    <div className="max-w-sm relative bg-[#1A1A1A] rounded-lg shaodw dark:bg-gray-800 dark:border-gray-700">
+    <div className="max-w-sm relative bg-[#d1c7a3] rounded-lg shaodw dark:bg-gray-800 dark:border-gray-700 hover:-translate-x-1 hover:-translate-y-1">
       <section className="relative">
         <Link to={`/product/${p._id}`}>
-          <span className="absolute bottom-3 right-3 bg-[#f1ddb3] text-[#6f3914] text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-[#6f3914] dark:text-white">
+          <span className="absolute bottom-3 right-3 bg-[#f1ddb3] text-[#885736] text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-[#6f3914] dark:text-white">
             {p?.brand}
           </span>
           <img
-            className="cursor-pointer w-full"
+            className="cursor-pointer w-full rounded-t-lg"
             src={p.image}
             alt={p.name}
             style={{ height: "170px", objectFit: "cover" }}
@@ -37,7 +37,7 @@ const ProductCard = ({ p }) => {
         <div className="flex justify-between">
           <h5 className="mb-2 text-xl text-whiet dark:text-white">{p?.name}</h5>
 
-          <p className="text-black font-semibold text-[#9f5e1d] ">
+          <p className=" font-semibold text-[#9f5e1d] ">
             Rs 
             {p?.price?.toLocaleString("en-US", {
               
@@ -45,14 +45,14 @@ const ProductCard = ({ p }) => {
           </p>
         </div>
 
-        <p className="mb-3 font-normal text-[#CFCFCF]">
+        <p className="mb-3 font-normal text-gray-700">
           {p?.description?.substring(0, 60)} ...
         </p>
 
         <section className="flex justify-between items-center">
           <Link
             to={`/product/${p._id}`}
-            className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#9f5e1d] hover:bg-[#6f3914] focus:ring-4 focus:outline-none focus:ring-pink-300 dark:bg-pink-600 dark:hover:bg-pink-700 dark:focus:ring-pink-800"
+            className="inline-flex items-center px-3 py-2 text-sm font-medium text-center  text-white bg-[#645832] hover:bg-[#5c4d1c]  focus:ring-4 focus:outline-none focus:ring-[#463f1a]"
           >
             Read More
             <svg

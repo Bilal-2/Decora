@@ -71,7 +71,7 @@ export default function ContactUs() {
                 className="w-full bg-white rounded border border-gray-300 focus:border-[#6f3914] focus:ring-2 focus:ring-[#9f5e1d] h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               ></textarea>
             </div>
-            <button className="text-white bg-[#9f5e1d] hover:bg-[#6f3914] border-0 py-2 px-6 focus:outline-none  rounded text-lg">
+            <button className="text-white bg-[#645832] hover:bg-[#5c4d1c] border-0 py-2 px-6 focus:outline-none  rounded text-lg">
               Submit
             </button>
             <p className="text-xs text-gray-500 mt-3">Terms and Conditions Apply</p>

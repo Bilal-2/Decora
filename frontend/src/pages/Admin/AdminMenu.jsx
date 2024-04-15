@@ -14,7 +14,7 @@ const AdminMenu = () => {
       <button
         className={`${
           isMenuOpen ? "top-[6rem] right-[0.3rem] z-10" : "top-[6rem] right-2"
-        } bg-[#151515] p-2 fixed rounded-lg`}
+        } bg-black  p-2 fixed rounded-lg`}
         onClick={toggleMenu}
       >
         {isMenuOpen ? (
@@ -29,14 +29,14 @@ const AdminMenu = () => {
       </button>
 
       {isMenuOpen && (
-        <section className="bg-[#151515] p-4 fixed right-5   top-[7rem]">
+        <section className="bg-white p-4 fixed right-5 rounded-lg shadow-lg hover:shadow-inner  top-[7rem]">
           <ul className="list-none mt-2">
             <li>
               <NavLink
-                className="list-item py-2 px-3 block mb-5 hover:bg-[#2E2D2D] rounded-sm"
+                className="list-item py-2 px-3 block mb-5 text-black hover:text-white hover:bg-[#2E2D2D]  rounded-sm"
                 to="/admin/dashboard"
                 style={({ isActive }) => ({
-                  color: isActive ? "greenyellow" : "white",
+                  color: isActive ? "greenyellow" : "",
                 })}
               >
                 Admin Dashboard
@@ -44,10 +44,10 @@ const AdminMenu = () => {
             </li>
             <li>
               <NavLink
-                className="list-item py-2 px-3 block mb-5 hover:bg-[#2E2D2D] rounded-sm"
+                className="list-item py-2 px-3 block mb-5 text-black hover:text-white hover:bg-[#2E2D2D] rounded-sm"
                 to="/admin/categorylist"
                 style={({ isActive }) => ({
-                  color: isActive ? "greenyellow" : "white",
+                  color: isActive ? "greenyellow" : "",
                 })}
               >
                 Create Category
@@ -55,10 +55,10 @@ const AdminMenu = () => {
             </li>
             <li>
               <NavLink
-                className="list-item py-2 px-3 block mb-5 hover:bg-[#2E2D2D] rounded-sm"
+                className="list-item py-2 px-3 block mb-5 text-black hover:text-white hover:bg-[#2E2D2D] rounded-sm"
                 to="/admin/productlist"
                 style={({ isActive }) => ({
-                  color: isActive ? "greenyellow" : "white",
+                  color: isActive ? "greenyellow" : "",
                 })}
               >
                 Create Product
@@ -66,10 +66,10 @@ const AdminMenu = () => {
             </li>
             <li>
               <NavLink
-                className="list-item py-2 px-3 block mb-5 hover:bg-[#2E2D2D] rounded-sm"
+                className="list-item py-2 px-3 block mb-5 text-black hover:text-white hover:bg-[#2E2D2D] rounded-sm"
                 to="/admin/allproductslist"
                 style={({ isActive }) => ({
-                  color: isActive ? "greenyellow" : "white",
+                  color: isActive ? "greenyellow" : "",
                 })}
               >
                 All Products
@@ -77,10 +77,10 @@ const AdminMenu = () => {
             </li>
             <li>
               <NavLink
-                className="list-item py-2 px-3 block mb-5 hover:bg-[#2E2D2D] rounded-sm"
+                className="list-item py-2 px-3 block mb-5 text-black hover:text-white hover:bg-[#2E2D2D] rounded-sm"
                 to="/admin/userlist"
                 style={({ isActive }) => ({
-                  color: isActive ? "greenyellow" : "white",
+                  color: isActive ? "greenyellow" : "",
                 })}
               >
                 Manage Users
@@ -88,10 +88,10 @@ const AdminMenu = () => {
             </li>
             <li>
               <NavLink
-                className="list-item py-2 px-3 block mb-5 hover:bg-[#2E2D2D] rounded-sm"
+                className="list-item py-2 px-3 block mb-5 text-black hover:text-white hover:bg-[#2E2D2D] rounded-sm"
                 to="/admin/orderlist"
                 style={({ isActive }) => ({
-                  color: isActive ? "greenyellow" : "white",
+                  color: isActive ? "greenyellow" : "",
                 })}
               >
                 Manage Orders

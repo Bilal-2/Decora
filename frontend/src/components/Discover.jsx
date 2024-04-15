@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 const Discover = () => {
   return (
     <>
-      <section className='my-40 relative bg-[#979470]'>
+      <section className='my-40 relative bg-[#645832]'>
         <div className="container md:w-5/6 mx-auto grid md:grid-cols-2 sm:grid-cols-1 items-center gap-14  justify-center px-2 md:px-0">
            <div className=''>
             {/* <h1 className='text-7xl font-bold leading-tight text-slate-100 absolute top-[-10%] left-0'>Get Inspired</h1> */}

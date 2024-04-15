@@ -45,12 +45,12 @@ const Cart = () => {
                   </div>
 
                   <div className="flex-1 ml-4">
-                    <Link to={`/product/${item._id}`} className="text-[#9f5e1d] hover:text-[#6f3914]">
+                    <Link to={`/product/${item._id}`} className=" text-[#645832] hover:text-[#5c4d1c]">
                       {item.name}
                     </Link>
 
-                    <div className="mt-2 text-white">{item.brand}</div>
-                    <div className="mt-2 text-white font-bold">
+                    <div className="mt-2 ">{item.brand}</div>
+                    <div className="mt-2  font-bold">
                       Rs  {item.price}
                     </div>
                   </div>
@@ -73,7 +73,7 @@ const Cart = () => {
 
                   <div>
                     <button
-                      className="text-red-500 lg:mr-[5rem]"
+                      className="text-red-600 lg:mr-[5rem]"
                       onClick={() => removeFromCartHandler(item._id)}
                     >
                       <FaTrash className="ml-[1rem] mt-[.5rem]" />
@@ -96,7 +96,7 @@ const Cart = () => {
                   </div>
 
                   <button
-                    className="bg-[#9f5e1d] hover:bg-[#6f3914] mt-4 py-2 px-4 rounded-full text-lg lg:w-full"
+                    className="text-white bg-[#645832] hover:bg-[#5c4d1c] mt-4 py-2 px-4 rounded-full text-lg lg:w-full"
                     disabled={cartItems.length === 0}
                     onClick={checkoutHandler}
                   >

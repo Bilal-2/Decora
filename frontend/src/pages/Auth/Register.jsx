@@ -48,7 +48,7 @@ const Register = () => {
   };
 
   return (
-    <div className="lg:flex md:flex sm:flex  justify-center items-center h-screen">
+    <div className="lg:flex md:flex  sm:flex  justify-center items-center h-screen">
       <section className="  flex flex-wrap  lg:w-min md:w-min sm:w-min lg:flex-nowrap shadow-xl rounded-xl hover:shadow-inner p-4 m-4">
         <div className="w-full lg:w-[25rem] md:w-[25rem] sm:w-[25rem] ">
           <h1 className="text-2xl font-semibold mb-4">Register</h1>
@@ -57,7 +57,7 @@ const Register = () => {
             <div className="my-[2rem]">
               <label
                 htmlFor="name"
-                className="block text-sm font-medium text-white"
+                className="block text-sm font-medium "
               >
                 Name
               </label>
@@ -74,7 +74,7 @@ const Register = () => {
             <div className="my-[2rem]">
               <label
                 htmlFor="email"
-                className="block text-sm font-medium text-white"
+                className="block text-sm font-medium "
               >
                 Email Address
               </label>
@@ -91,7 +91,7 @@ const Register = () => {
             <div className="my-[2rem]">
               <label
                 htmlFor="password"
-                className="block text-sm font-medium text-white"
+                className="block text-sm font-medium "
               >
                 Password
               </label>
@@ -108,7 +108,7 @@ const Register = () => {
             <div className="my-[2rem]">
               <label
                 htmlFor="confirmPassword"
-                className="block text-sm font-medium text-white"
+                className="block text-sm font-medium "
               >
                 Confirm Password
               </label>
@@ -125,7 +125,7 @@ const Register = () => {
             <button
               disabled={isLoading}
               type="submit"
-              className="bg-[#9f5e1d] hover:bg-[#6f3914] text-white px-4 py-2 rounded cursor-pointer my-[1rem] w-full"
+              className="bg-[#645832] hover:bg-[#5c4d1c]  px-4 py-2 rounded cursor-pointer my-[1rem] w-full"
             >
               {isLoading ? "Registering..." : "Register"}
             </button>
@@ -134,11 +134,11 @@ const Register = () => {
           </form>
 
           <div className="mt-4">
-            <p className="text-white">
+            <p className="">
               Already have an account?{" "}
               <Link
                 to={redirect ? `/login?redirect=${redirect}` : "/login"}
-                className="text-[#9f5e1d] hover:text-[#6f3914] hover:underline"
+                className="text-[#645832] hover:text-[#5c4d1c] hover:underline"
               >
                 Login
               </Link>

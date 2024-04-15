@@ -3,11 +3,16 @@
 @tailwind utilities;
 
 body {
-  background: #d8cea0;
-  color: #fff;
+  background: #ebe6d7;
+  color: #000;
+ 
 }
 
 input,
 textarea {
   color: #000;
 }
+
+
+   /* #d1c7a3;
+   #645832; */

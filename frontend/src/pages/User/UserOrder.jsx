@@ -15,7 +15,7 @@ const UserOrder = () => {
           </div>
           <div className="p-5 flex w-full justify-center flex-wrap ">
             <Link to="/shop">
-              <button className="bg-[#9f5e1d] hover:bg-[#6f3914] text-back py-2 px-3 rounded">
+              <button className="text-white bg-[#645832] hover:bg-[#5c4d1c] py-2 px-3 rounded">
                 SHOP ITEMS
               </button>
             </Link>
@@ -60,11 +60,11 @@ const UserOrder = () => {
 
                     <td className="py-2">
                       {order.isPaid ? (
-                        <p className="p-1 text-center bg-green-400 w-[6rem] rounded-full">
+                        <p className="p-1 text-center text-white bg-green-600 w-[6rem] rounded-full">
                           Completed
                         </p>
                       ) : (
-                        <p className="p-1 text-center bg-red-400 w-[6rem] rounded-full">
+                        <p className="p-1 text-center text-white bg-red-600 w-[6rem] rounded-full">
                           Pending
                         </p>
                       )}
@@ -72,11 +72,11 @@ const UserOrder = () => {
 
                     <td className="px-2 py-2">
                       {order.isDelivered ? (
-                        <p className="p-1 text-center bg-green-400 w-[6rem] rounded-full">
+                        <p className="p-1 text-center text-white bg-green-600 w-[6rem] rounded-full">
                           Completed
                         </p>
                       ) : (
-                        <p className="p-1 text-center bg-red-400 w-[6rem] rounded-full">
+                        <p className="p-1 text-center bg-red-600 text-white w-[6rem] rounded-full">
                           Pending
                         </p>
                       )}
@@ -84,7 +84,7 @@ const UserOrder = () => {
 
                     <td className="px-2 py-2">
                       <Link to={`/order/${order._id}`}>
-                        <button className="bg-[#9f5e1d] hover:bg-[#6f3914] text-back py-2 px-3 rounded">
+                        <button className="text-white bg-[#645832] hover:bg-[#5c4d1c] py-2 px-3 rounded">
                           View Details
                         </button>
                       </Link>

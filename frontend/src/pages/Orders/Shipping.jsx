@@ -11,7 +11,7 @@ const Shipping = () => {
   const cart = useSelector((state) => state.cart);
   const { shippingAddress } = cart;
 
-  const [paymentMethod, setPaymentMethod] = useState("Credit Card");
+  const [paymentMethod, setPaymentMethod] = useState("Cash On Dilevery");
   const [address, setAddress] = useState(shippingAddress.address || "");
   const [city, setCity] = useState(shippingAddress.city || "");
   const [postalCode, setPostalCode] = useState(
@@ -116,7 +116,7 @@ const Shipping = () => {
           </div>
 
           <button
-            className="bg-[#9f5e1d] hover:bg-[#6f3914] text-white py-2 px-4 rounded-full text-lg w-full"
+            className="text-white bg-[#645832] hover:bg-[#5c4d1c] py-2 px-4 rounded-full text-lg w-full"
             type="submit"
           >
             Continue

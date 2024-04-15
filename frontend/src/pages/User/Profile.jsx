@@ -46,13 +46,13 @@ const Profile = () => {
   };
 
   return (
-    <div className="container mx-auto p-4 lg:mt-[10rem] md:">
+    <div className="container mx-auto p-4 lg:my-[3rem] md:">
       <div className="flex justify-center align-center md:flex md:space-x-4">
         <div className="md:w-1/3">
           <h2 className="text-2xl font-semibold mb-4">Update Profile</h2>
           <form onSubmit={submitHandler}>
             <div className="mb-4">
-              <label className="block text-white mb-2">Name</label>
+              <label className="block  mb-2">Name</label>
               <input
                 type="text"
                 placeholder="Enter name"
@@ -63,7 +63,7 @@ const Profile = () => {
             </div>
 
             <div className="mb-4">
-              <label className="block text-white mb-2">Email Address</label>
+              <label className="block  mb-2">Email Address</label>
               <input
                 type="email"
                 placeholder="Enter email"
@@ -74,7 +74,7 @@ const Profile = () => {
             </div>
 
             <div className="mb-4">
-              <label className="block text-white mb-2">Password</label>
+              <label className="block  mb-2">Password</label>
               <input
                 type="password"
                 placeholder="Enter password"
@@ -85,7 +85,7 @@ const Profile = () => {
             </div>
 
             <div className="mb-4">
-              <label className="block text-white mb-2">Confirm Password</label>
+              <label className="block  mb-2">Confirm Password</label>
               <input
                 type="password"
                 placeholder="Confirm password"
@@ -98,14 +98,14 @@ const Profile = () => {
             <div className="flex justify-between">
               <button
                 type="submit"
-                className="bg-[#9f5e1d] hover:bg-[#6f3914] text-white py-2 px-4 rounded "
+                className="text-white bg-[#645832] hover:bg-[#5c4d1c] py-2 px-4 rounded "
               >
                 Update
               </button>
 
               <Link
                 to="/user-orders"
-                className=" text-white py-2 px-4 rounded bg-[#9f5e1d] hover:bg-[#6f3914]"
+                className=" py-2 px-4 rounded text-white bg-[#645832] hover:bg-[#5c4d1c]"
               >
                 My Orders
               </Link>

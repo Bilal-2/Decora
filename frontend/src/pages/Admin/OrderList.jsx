@@ -155,23 +155,23 @@ const OrderList = () => {
 
                     <td className="px-3 py-2">
                       {order.isPaid ? (
-                        <p className="text-center bg-green-400 text-white px-2 py-1 rounded-full">Completed</p>
+                        <p className="text-center bg-green-600 text-white px-2 py-1 rounded-full">Completed</p>
                       ) : (
-                        <p className="text-center bg-red-400 text-white px-2 py-1 rounded-full">Pending</p>
+                        <p className="text-center bg-red-600 text-white px-2 py-1 rounded-full">Pending</p>
                       )}
                     </td>
 
                     <td className="px-3 py-2">
                       {order.isDelivered ? (
-                        <p className="text-center bg-green-400 text-white px-2 py-1 rounded-full">Completed</p>
+                        <p className="text-center bg-green-600 text-white px-2 py-1 rounded-full">Completed</p>
                       ) : (
-                        <p className="text-center bg-red-400 text-white px-2 py-1 rounded-full">Pending</p>
+                        <p className="text-center bg-red-600 text-white px-2 py-1 rounded-full">Pending</p>
                       )}
                     </td>
 
                     <td className="px-3 py-2">
                       <Link to={`/order/${order._id}`}>
-                        <button className="px-2 py-1    bg-blue-300 text-white rounded hover:bg-blue-600">More</button>
+                        <button className="px-2 py-1    bg-[#645832] hover:bg-[#5c4d1c] text-white rounded ">More</button>
                       </Link>
                     </td>
                   </tr>

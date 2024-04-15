@@ -95,7 +95,7 @@ const Shop = () => {
       </button>
           {showFilters && (
             <div className="absolute z-10 top-[9rem] lg:w-[20rem] bg-transparent backdrop-blur-md  p-3 mt-2 mb-2 rounded-lg shodow-ls ml-10">
-              <h2 className="h4 text-center py-2 bg-black rounded-full mb-2">
+              <h2 className="h4 text-center py-2 bg-[#645832] text-white rounded-full mb-2">
                 Filter by Categories
               </h2>
               <div className="p-5">
@@ -120,7 +120,7 @@ const Shop = () => {
                   </div>
                 ))}
               </div>
-              <h2 className="h4 text-center py-2 bg-black rounded-full mb-2">
+              <h2 className="h4 text-center py-2 bg-[#645832] text-white rounded-full mb-2">
                 Filter by Brands
               </h2>
               <div className="p-5">
@@ -144,7 +144,7 @@ const Shop = () => {
                   </div>
                 ))}
               </div>
-              <h2 className="h4 text-center py-2 bg-black rounded-full mb-2">
+              <h2 className="h4 text-center py-2 bg-[#645832] text-white rounded-full mb-2">
                 Filter by Price
               </h2>
               <div className="p-5">
@@ -167,8 +167,8 @@ const Shop = () => {
             </div>
           )}
 
-          <div className="lg:w-[20rem] bg-[#151515] p-3 mt-2 mb-2 rounded-lg sm:relative ml-10 hidden lg:block md:block ">
-              <h2 className="h4 text-center py-2 bg-black rounded-full mb-2">
+          <div className="lg:w-[20rem] bg-[#d1c7a3] p-3 mt-2 mb-2 rounded-lg sm:relative ml-10 hidden lg:block md:block h-min ">
+              <h2 className="h4 text-center py-2 bg-[#645832] text-white rounded-full mb-2">
                 Filter by Categories
               </h2>
               <div className="p-5">
@@ -193,7 +193,7 @@ const Shop = () => {
                   </div>
                 ))}
               </div>
-              <h2 className="h4 text-center py-2 bg-black rounded-full mb-2">
+              <h2 className="h4 text-center py-2 bg-[#645832] text-white rounded-full mb-2">
                 Filter by Brands
               </h2>
               <div className="p-5">
@@ -217,7 +217,7 @@ const Shop = () => {
                   </div>
                 ))}
               </div>
-              <h2 className="h4 text-center py-2 bg-black rounded-full mb-2">
+              <h2 className="h4 text-center py-2 bg-[#645832] text-white rounded-full mb-2">
                 Filter by Price
               </h2>
               <div className="p-5">

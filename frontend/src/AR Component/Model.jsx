@@ -34,3 +34,8 @@ function ModelContent({ modelUrl, position }) {
    return <primitive position={position} object={gltf.scene} />;
   return <div>{modelUrl}</div>; // Just displaying modelUrl for demonstration
 }
+
+
+
+
+// --------------------------------------------------------------------------//

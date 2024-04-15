@@ -100,7 +100,7 @@ const ProductTabs = ({
                 <button
                   type="submit"
                   disabled={loadingProductReview}
-                  className="bg-[#9f5e1d] hover:bg-[#6f3914] text-white py-2 px-4 rounded-lg"
+                  className="bg-[#645832] hover:bg-[#5c4d1c] text-white py-2 px-4 rounded-lg"
                 >
                   Submit
                 </button>
@@ -123,11 +123,11 @@ const ProductTabs = ({
               {product.reviews.map((review) => (
                 <div
                   key={review._id}
-                  className="bg-[#1A1A1A] p-4 rounded-lg xl:ml-[2rem] sm:ml-[0rem] xl:w-[50rem] sm:w-[24rem] mb-5"
+                  className="bg-[#d1c7a3] p-4 rounded-lg xl:ml-[2rem] sm:ml-[0rem] xl:w-[50rem] sm:w-[24rem] mb-5"
                 >
                   <div className="flex justify-between">
-                    <strong className="text-[#B0B0B0]">{review.name}</strong>
-                    <p className="text-[#B0B0B0]">
+                    <strong className="">{review.name}</strong>
+                    <p className=" text-gray-300]">
                       {review.createdAt.substring(0, 10)}
                     </p>
                   </div>

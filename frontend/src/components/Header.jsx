@@ -149,7 +149,7 @@ const Header = () => {
                           </li>
                           <li>
                             <Link
-                              to="/admin/productlist"
+                              to="/admin/allproductslist"
                               className="block px-4 py-2 hover:bg-gray-100"
                             >
                               <VscSymbolMisc className="absolute top-[4.1rem] lg:top-[5.9rem] left-4" />
@@ -198,7 +198,7 @@ const Header = () => {
               )}
               <li
                 onClick={() => menuBerger()}
-                className="md:hidden block bg-black w-min h-min "
+                className="md:hidden block  w-min h-min "
               >
                 <GiHamburgerMenu />
               </li>

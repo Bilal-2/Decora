@@ -69,14 +69,14 @@ const ProductDetails = () => {
 
   return (
     <>
-      <div>
+      {/* <div>
         <Link
           to="/"
           className="text-white font-semibold hover:underline ml-[10rem]"
         >
           Go Back
         </Link>
-      </div>
+      </div> */}
 
       {isLoading ? (
         <Loader />
@@ -113,29 +113,29 @@ const ProductDetails = () => {
                   <div className="lg:flex flex-nowrap  items-center justify-between lg:w-[20rem]">
                     <div className="flex flex-col">
                       <h1 className="flex items-center mb-6">
-                        <FaStore className="mr-2 text-white" /> Brand:{" "}
+                        <FaStore className="mr-2 " /> Brand:{" "}
                         {product.brand}
                       </h1>
                       <h1 className="flex items-center mb-6 lg:w-[20rem]">
-                        <FaClock className="mr-2 text-white" /> Added:{" "}
-                        {moment(product.createAt).fromNow()}
+                        <FaClock className="mr-2 " /> Added:{" "}
+                        {moment(product.createdAt).fromNow()}
                       </h1>
                       <h1 className="flex items-center mb-6 w-[10rem]">
-                        <FaStar className="mr-2 text-white" /> Reviews:{" "}
+                        <FaStar className="mr-2 " /> Reviews:{" "}
                         {product.numReviews}
                       </h1>
                     </div>
 
                     <div className="two">
                       <h1 className="flex items-center mb-6 w-[10rem]">
-                        <FaStar className="mr-2 text-white" /> Ratings: {rating}
+                        <FaStar className="mr-2" /> Rating: {product.rating}
                       </h1>
                       <h1 className="flex items-center mb-6 w-[10rem]">
-                        <FaShoppingCart className="mr-2 text-white" /> Quantity:{" "}
+                        <FaShoppingCart className="mr-2 " /> Quantity:{" "}
                         {product.quantity}
                       </h1>
                       <h1 className="flex items-center mb-6 w-[10rem]">
-                        <FaBox className="mr-2 text-white" /> In Stock:{" "}
+                        <FaBox className="mr-2 " /> In Stock:{" "}
                         {product.countInStock}
                       </h1>
                     </div>
@@ -169,7 +169,7 @@ const ProductDetails = () => {
                   <button
                     onClick={addToCartHandler}
                     disabled={product.countInStock === 0}
-                    className="bg-[#9f5e1d] hover:bg-[#6f3914] text-white py-2 px-4 rounded-lg mt-4 md:mt-0"
+                    className="bg-[#645832] hover:bg-[#5c4d1c] text-white py-2 px-4 rounded-lg mt-4 md:mt-0"
                   >
                     Add To Cart
                   </button>
@@ -177,7 +177,7 @@ const ProductDetails = () => {
                   <button
                     onClick={arHandler}
                     disabled={product.countInStock === 0}
-                    className="bg-[#9f5e1d] hover:bg-[#6f3914] text-white ml-10 py-2 px-4 rounded-lg mt-4 md:mt-0"
+                    className="bg-[#645832] hover:bg-[#5c4d1c] text-white ml-10 py-2 px-4 rounded-lg mt-4 md:mt-0"
                   >
                     View In 3D
                   </button>

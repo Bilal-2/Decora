@@ -22,7 +22,7 @@ const PlaceOrder = () => {
   }, [cart.paymentMethod, cart.shippingAddress.address, navigate]);
 
   const dispatch = useDispatch();
-
+  console.log("cart", cart);
   const placeOrderHandler = async () => {
     try {
       const res = await createOrder({
@@ -30,7 +30,7 @@ const PlaceOrder = () => {
         shippingAddress: cart.shippingAddress,
         paymentMethod: cart.paymentMethod,
         itemsPrice: cart.itemsPrice,
-        shippingPrice: cart.shippingPrice,
+        shippingPrice: cart.itemsPrice > 20000 ? 1000 : 0,
         taxPrice: cart.taxPrice,
         totalPrice: cart.totalPrice,
       }).unwrap();
@@ -139,7 +139,7 @@ const PlaceOrder = () => {
 
               <button
                 type="button"
-                className="bg-[#9f5e1d] hover:bg-[#6f3914] text-white py-2 px-4 rounded-full text-lg w-full mt-4"
+                className="text-white bg-[#645832] hover:bg-[#5c4d1c] py-2 px-4 rounded-full text-lg w-full mt-4"
                 disabled={cart.cartItems === 0}
                 onClick={placeOrderHandler}
               >

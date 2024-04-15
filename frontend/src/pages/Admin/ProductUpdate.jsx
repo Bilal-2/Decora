@@ -5,6 +5,7 @@ import {
   useUpdateProductMutation,
   useDeleteProductMutation,
   useGetProductByIdQuery,
+  useUploadProductModelMutation,
   useUploadProductImageMutation,
 } from "../../redux/api/productApiSlice";
 import { useFetchCategoriesQuery } from "../../redux/api/categoryApiSlice";
@@ -18,6 +19,7 @@ const AdminProductUpdate = () => {
   console.log(productData);
 
   const [image, setImage] = useState(productData?.image || "");
+  const [model, setModel] = useState(productData?.model || "");
   const [name, setName] = useState(productData?.name || "");
   const [description, setDescription] = useState(
     productData?.description || ""
@@ -36,6 +38,8 @@ const AdminProductUpdate = () => {
 
   const [uploadProductImage] = useUploadProductImageMutation();
 
+  const [uploadProductModel] = useUploadProductModelMutation();
+
   // Define the update product mutation
   const [updateProduct] = useUpdateProductMutation();
 
@@ -51,6 +55,8 @@ const AdminProductUpdate = () => {
       setQuantity(productData.quantity);
       setBrand(productData.brand);
       setImage(productData.image);
+      setModel(productData.model);
+      setStock(productData.countInStock);
     }
   }, [productData]);
 
@@ -72,11 +78,26 @@ const AdminProductUpdate = () => {
     }
   };
 
+  const uploadModelHandler = async (e) => {
+    const formData = new FormData();
+    formData.append("model", e.target.files[0]);
+    try {
+      const res = await uploadProductModel(formData).unwrap();
+      console.log("res ", res);
+      console.log("model", res.model);
+      toast.success(res.message);
+      setModel(res.model);
+    } catch (error) {
+      toast.error(error?.data?.message || error.error);
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const formData = new FormData();
       formData.append("image", image);
+      formData.append("model", model);
       formData.append("name", name);
       formData.append("description", description);
       formData.append("price", price);
@@ -87,8 +108,9 @@ const AdminProductUpdate = () => {
 
       // Update product using the RTK Query mutation
       const data = await updateProduct({ productId: params._id, formData });
-
+      console.log("Data",data);
       if (data?.error) {
+        console.log(data.error);
         toast.error(data.error, {
           position: toast.POSITION.TOP_RIGHT,
           autoClose: 2000,
@@ -150,14 +172,27 @@ const AdminProductUpdate = () => {
             )}
 
             <div className="mb-3">
-              <label className="text-white  py-2 px-4 block w-full text-center rounded-lg cursor-pointer font-bold ">
+              <label className="border border-black py-2 px-4 block w-full text-center rounded-lg cursor-pointer font-bold ">
                 {image ? image.name : "Upload image"}
                 <input
                   type="file"
                   name="image"
                   accept="image/*"
                   onChange={uploadFileHandler}
-                  className="text-white"
+                  className="text-black"
+                />
+              </label>
+            </div>
+
+            <div className="mb-3">
+              <label className="border border-black px-4 block w-full text-center rounded-lg cursor-pointer font-bold py-11">
+                {model ? model.name : "Upload 3D Model"}
+                <input
+                  type="file"
+                  name="model"
+                  accept="*" // accept=".glb, .gltf"
+                  onChange={uploadModelHandler}
+                  className={!model ? "hidden" : "text-black"}
                 />
               </label>
             </div>
@@ -168,7 +203,7 @@ const AdminProductUpdate = () => {
                   <label htmlFor="name">Name</label> <br />
                   <input
                     type="text"
-                    className="p-4 mb-3 w-full border rounded-lg bg-[#101011] text-white  "
+                    className="p-4 mb-3 w-full border rounded-lg bg-white text-black  "
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                   />
@@ -178,7 +213,7 @@ const AdminProductUpdate = () => {
                   <label htmlFor="name block">Price</label> <br />
                   <input
                     type="number"
-                    className="p-4 mb-3 w-full border rounded-lg bg-[#101011] text-white "
+                    className="p-4 mb-3 w-full border rounded-lg  bg-white text-black "
                     value={price}
                     onChange={(e) => setPrice(e.target.value)}
                   />
@@ -189,7 +224,7 @@ const AdminProductUpdate = () => {
                   <input
                     type="number"
                     min="1"
-                    className="p-4 mb-3 w-full border rounded-lg bg-[#101011] text-white"
+                    className="p-4 mb-3 w-full border rounded-lg  bg-white text-black"
                     value={quantity}
                     onChange={(e) => setQuantity(e.target.value)}
                   />
@@ -198,7 +233,7 @@ const AdminProductUpdate = () => {
                   <label htmlFor="name block">Brand</label> <br />
                   <input
                     type="text"
-                    className="p-4 mb-3 w-full border rounded-lg bg-[#101011] text-white "
+                    className="p-4 mb-3 w-full border rounded-lg  bg-white text-black "
                     value={brand}
                     onChange={(e) => setBrand(e.target.value)}
                   />
@@ -209,7 +244,7 @@ const AdminProductUpdate = () => {
                 </label>
                 <textarea
                   type="text"
-                  className="p-2 mb-3 bg-[#101011]  border rounded-lg w-full h-[10rem] text-white"
+                  className="p-2 mb-3  border rounded-lg w-full h-[10rem]  bg-white text-black"
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
                 />
@@ -218,7 +253,7 @@ const AdminProductUpdate = () => {
                   <label htmlFor="name block">Count In Stock</label> <br />
                   <input
                     type="text"
-                    className="p-4 mb-3 w-full border rounded-lg bg-[#101011] text-white "
+                    className="p-4 mb-3 w-full border rounded-lg  bg-white text-black "
                     value={stock}
                     onChange={(e) => setStock(e.target.value)}
                   />
@@ -228,7 +263,7 @@ const AdminProductUpdate = () => {
                   <label htmlFor="">Category</label> <br />
                   <select
                     placeholder="Choose Category"
-                    className="p-4 mb-3 w-full border rounded-lg bg-[#101011] text-white "
+                    className="p-4 mb-3 w-full border rounded-lg  bg-white text-black "
                     onChange={(e) => setCategory(e.target.value)}
                   >
                     {categories?.map((c) => (

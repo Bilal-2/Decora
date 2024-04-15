@@ -49,7 +49,7 @@ const Login = () => {
             <div className="my-[2rem]">
               <label
                 htmlFor="email"
-                className="block text-sm font-medium text-white"
+                className="block text-sm font-medium "
               >
                 Email Address
               </label>
@@ -66,7 +66,7 @@ const Login = () => {
             <div className="mb-4">
               <label
                 htmlFor="password"
-                className="block text-sm font-medium text-white"
+                className="block text-sm font-medium "
               >
                 Password
               </label>
@@ -83,7 +83,7 @@ const Login = () => {
             <button
               disabled={isLoading}
               type="submit"
-              className="bg-[#9f5e1d] hover:bg-[#6f3914] text-white px-4 py-2 rounded cursor-pointer my-[1rem]  w-full"
+              className="bg-[#645832] hover:bg-[#5c4d1c] text-white px-4 py-2 rounded cursor-pointer my-[1rem]  w-full"
             >
               {isLoading ? "Signing In..." : "Sign In"}
             </button>
@@ -92,11 +92,11 @@ const Login = () => {
           </form>
 
           <div className="mt-4">
-            <p className="text-white">
+            <p className="">
               New Customer?{" "}
               <Link
                 to={redirect ? `/register?redirect=${redirect}` : "/register"}
-                className="text-[#9f5e1d] hover:text-[#6f3914] hover:underline"
+                className="text-[#645832] hover:text-[#5c4d1c] hover:underline"
               >
                 Register
               </Link>

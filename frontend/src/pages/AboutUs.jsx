@@ -14,7 +14,7 @@ const AboutUs = () => (
                 <article>
                     <div>
                         <h2 className="font-bold text-black">Our Story</h2>
-                        <div className="w-24 h-1 mt-3 bg-[#9f5e1d]"/>
+                        <div className="w-24 h-1 mt-3  bg-[#645832]"/>
                     </div>
                     <p className="mt-5 text-sm md:text-base lg:text-lg leading-loose text-black">
                     Welcome to Decora, where we redefine the way you experience furniture. At Decora, we believe in the seamless fusion of style and technology. Our online store introduces a groundbreaking feature – an Augmented Reality (AR) viewer, allowing you to virtually place our exquisite furniture pieces in your space before making a purchase. Immerse yourself in a world of design possibilities as you explore our curated collection crafted with precision and passion. At Decora, we're not just a furniture store; we're a gateway to a personalized and interactive shopping experience, where your vision for a perfect home comes to life. Join us on this journey of innovation and elegance – because your space deserves nothing less.

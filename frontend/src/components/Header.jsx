@@ -48,13 +48,13 @@ const Header = () => {
   };
 
   return (
-    <section className="  sticky top-0 z-50 bg-transparent backdrop-blur-md ">
+    <section className="  sticky top-0 z-50 bg-[#645832] backdrop-blur-md ">
       <div className="container md:w-5/6 w-full mx-0 pt-5 pb-7 px-2 md:px-0  ">
         <div className="lg:mx-[5rem] w-full flex justify-between items-center">
           <div className="w-40">
             <Link
               to="/"
-              className="font-semi text-4xl primary_font  text-black"
+              className="font-semi text-4xl primary_font  text-white"
             >
               Decora
             </Link>
@@ -63,14 +63,14 @@ const Header = () => {
             <ul className="flex md:flex-row flex-col md:gap-10 gap-3">
               {menus?.map((menu, index) => (
                 <li key={index}>
-                  <Link to={menu?.link} className="font-semi text-black">
+                  <Link to={menu?.link} className="font-semi text-white">
                     {menu?.name}
                   </Link>
                 </li>
                 
               ))}
               <li >
-                  <Link to='/favorite' className="font-semi text-black">
+                  <Link to='/favorite' className="font-semi text-white">
                     Favorites 
                     
                       {/* <FavoritesCount /> */}
@@ -81,13 +81,13 @@ const Header = () => {
           <div>
             <ul className="flex gap-6">
               <li>
-                <Link to="/Cart" className="text-xl text-black">
+                <Link to="/Cart" className="text-xl text-white">
                   <BsCart4 />
                 </Link>
                 <div className="absolute top-4 ">
                   {cartItems.length > 0 && (
                     <span>
-                      <span className="px-1 py-0 text-sm text-white bg-black rounded-full">
+                      <span className="px-1 py-0 text-sm text-black bg-white rounded-full">
                         {cartItems.reduce((a, c) => a + c.qty, 0)}
                       </span>
                     </span>
@@ -96,14 +96,14 @@ const Header = () => {
               </li>
               {!userInfo && (
                 <li>
-                  <Link to="/login" className="text-xl text-black">
+                  <Link to="/login" className="text-xl text-white">
                     <AiOutlineUser />
                   </Link>
                 </li>
               )}
               {userInfo && (
                 <li
-                  className="text-xl text-black cursor-pointer"
+                  className="text-xl text-white cursor-pointer"
                   onClick={toggleDropdown}
                 >
                   <FaUserGear />
@@ -198,7 +198,7 @@ const Header = () => {
               )}
               <li
                 onClick={() => menuBerger()}
-                className="md:hidden block  w-min h-min "
+                className="md:hidden block text-white  w-min h-min "
               >
                 <GiHamburgerMenu />
               </li>

@@ -114,7 +114,7 @@ const ProductList = () => {
                 name="model"
                 accept="image/*"
                 onChange={uploadFileHandler}
-                className={!image ? "hidden" : "tet-black"}
+                className={!image ? "hidden" : "text-black w-[15rem] lg:w-auto"}
               />
             </label>
           </div>
@@ -127,7 +127,7 @@ const ProductList = () => {
                 name="image"
                 accept="*" // accept=".glb, .gltf"
                 onChange={uploadModelHandler}
-                className={!model ? "hidden" : "text-black"}
+                className={!model ? "hidden" : "text-black w-[15rem] lg:w-auto"}
               />
             </label>
           </div>

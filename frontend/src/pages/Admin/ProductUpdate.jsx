@@ -172,14 +172,14 @@ const AdminProductUpdate = () => {
             )}
 
             <div className="mb-3">
-              <label className="border border-black py-2 px-4 block w-full text-center rounded-lg cursor-pointer font-bold ">
+              <label className="border border-black py-2 lg:px-4 block w-full text-center rounded-lg cursor-pointer font-bold ">
                 {image ? image.name : "Upload image"}
                 <input
                   type="file"
                   name="image"
                   accept="image/*"
                   onChange={uploadFileHandler}
-                  className="text-black"
+                  className="text-black w-[15rem] lg:w-auto"
                 />
               </label>
             </div>
@@ -192,7 +192,7 @@ const AdminProductUpdate = () => {
                   name="model"
                   accept="*" // accept=".glb, .gltf"
                   onChange={uploadModelHandler}
-                  className={!model ? "hidden" : "text-black"}
+                  className={!model ? "hidden" : "text-black w-[15rem] lg:w-auto"}
                 />
               </label>
             </div>
@@ -278,13 +278,13 @@ const AdminProductUpdate = () => {
               <div className="">
                 <button
                   onClick={handleSubmit}
-                  className="py-4 px-10 mt-5 rounded-lg text-lg font-bold  bg-green-600 mr-6"
+                  className="py-4 px-10 mt-5 rounded-lg text-lg font-bold  bg-green-600 lg:mr-6"
                 >
                   Update
                 </button>
                 <button
                   onClick={handleDelete}
-                  className="py-4 px-10 mt-5 rounded-lg text-lg font-bold  bg-[#6f3914]"
+                  className="py-4 px-10 mt-5 rounded-lg text-lg font-bold  bg-red-600"
                 >
                   Delete
                 </button>

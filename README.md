@@ -1,12 +1,12 @@
 # Decora
  A 3D Web base Augmented Reality Ecommerce Furniture store using MERN, Three.js  and WebXR.
 
- ----------------------IN PROGRESS-----------------------
+ ----------------------IMPLEMENTED-----------------------
 
 
-Currently:
+Currently Implemented:
 
-   -> Successfully implemented AR Functionality On Frontend.
+   -> Successfully implemented AR Functionality.
    
    -> 3D viewr Functionality Implemented.
    
@@ -14,13 +14,26 @@ Currently:
    
    -> Fetching 3D models from mongodb and displaying it on frontend.
    
-   -> Other Customer Side Frontend.
+   -> Complete Customer UI.
    
    -> Fetching Products form mongoDB and displaying it on Frontend.
+
+   -> Complete UI With Admin.
    
+   -> Complete Project With Backend.
+
+
+
+ ----------------------IN PROGRESS-----------------------
 
 To Be Done: 
 
-   -> Implementing Basic Ecommerce Store's Backend Funtionalities.
+   -> Enhance 3D Viewer.
+
+   -> Add Google Pay.
+
+   -> Add Google Auth.
+
+   
 
  

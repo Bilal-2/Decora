@@ -17,10 +17,10 @@ const ProductCard = ({ p }) => {
   };
 
   return (
-    <div className="max-w-sm relative bg-[#d1c7a3] rounded-lg shaodw dark:bg-gray-800 dark:border-gray-700 hover:-translate-x-1 hover:-translate-y-1">
+    <div className="max-w-sm relative bg-[#d1c7a3] rounded-lg shaodw hover:-translate-x-1 hover:-translate-y-1">
       <section className="relative">
         <Link to={`/product/${p._id}`}>
-          <span className="absolute bottom-3 right-3 bg-[#f1ddb3] text-[#885736] text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-[#6f3914] dark:text-white">
+          <span className="absolute bottom-3 right-3 bg-[#f1ddb3] text-[#885736] text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full ">
             {p?.brand}
           </span>
           <img
@@ -35,7 +35,7 @@ const ProductCard = ({ p }) => {
 
       <div className="p-5">
         <div className="flex justify-between">
-          <h5 className="mb-2 text-xl text-whiet dark:text-white">{p?.name}</h5>
+          <h5 className="mb-2 text-xl text-whiet ">{p?.name}</h5>
 
           <p className=" font-semibold text-[#9f5e1d] ">
             Rs 

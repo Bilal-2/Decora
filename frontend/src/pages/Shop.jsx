@@ -108,11 +108,11 @@ const Shop = () => {
                         onChange={(e) =>
                           handleCheck(e.target.checked, c._id)
                         }
-                        className="w-4 h-4 text-[#6f3914] bg-gray-100 border-gray-300 rounded focus:ring-[#9f5e1d] dark:focus:ring-[#6f3914] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        className="w-4 h-4 text-[#6f3914] bg-gray-100 border-gray-300 rounded focus:ring-[#9f5e1d]   focus:ring-2 "
                       />
                       <label
                         htmlFor={c._id}
-                        className="ml-2 text-sm font-medium text-white dark:text-gray-300"
+                        className="ml-2 text-sm font-medium text-white "
                       >
                         {c.name}
                       </label>
@@ -132,11 +132,11 @@ const Shop = () => {
                         id={brand}
                         name="brand"
                         onChange={() => handleBrandClick(brand)}
-                        className="w-4 h-4 text-[#9f5e1d] bg-gray-100 border-gray-300 focus:ring-[#9f5e1d] dark:focus:ring-[#6f3914] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        className="w-4 h-4 text-[#9f5e1d] bg-gray-100 border-gray-300 focus:ring-[#9f5e1d]  focus:ring-2 "
                       />
                       <label
                         htmlFor={brand}
-                        className="ml-2 text-sm font-medium text-white dark:text-gray-300"
+                        className="ml-2 text-sm font-medium text-white "
                       >
                         {brand}
                       </label>
@@ -181,11 +181,11 @@ const Shop = () => {
                         onChange={(e) =>
                           handleCheck(e.target.checked, c._id)
                         }
-                        className="w-4 h-4 text-[#6f3914] bg-gray-100 border-gray-300 rounded focus:ring-[#9f5e1d] dark:focus:ring-[#6f3914] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        className="w-4 h-4 text-[#6f3914] bg-gray-100 border-gray-300 rounded focus:ring-[#9f5e1d]  focus:ring-2 "
                       />
                       <label
                         htmlFor={c._id}
-                        className="ml-2 text-sm font-medium text-white dark:text-gray-300"
+                        className="ml-2 text-sm font-medium text-white "
                       >
                         {c.name}
                       </label>
@@ -205,11 +205,11 @@ const Shop = () => {
                         id={brand}
                         name="brand"
                         onChange={() => handleBrandClick(brand)}
-                        className="w-4 h-4 text-[#9f5e1d] bg-gray-100 border-gray-300 focus:ring-[#9f5e1d] dark:focus:ring-[#6f3914] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        className="w-4 h-4 text-[#9f5e1d] bg-gray-100 border-gray-300 focus:ring-[#9f5e1d]  focus:ring-2 "
                       />
                       <label
                         htmlFor={brand}
-                        className="ml-2 text-sm font-medium text-white dark:text-gray-300"
+                        className="ml-2 text-sm font-medium text-white "
                       >
                         {brand}
                       </label>

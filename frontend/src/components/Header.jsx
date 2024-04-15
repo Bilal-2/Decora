@@ -212,9 +212,9 @@ const Header = () => {
           <ul className="flex md:flex-row flex-col md:gap-10 gap-3 menu text-center text-black pb-3">
             {menus?.map((menu, index) => (
               <li key={index}>
-                <a href={menu?.link} className="font-semi">
+                <Link to={menu?.link} className="font-semi">
                   {menu?.name}
-                </a>
+                </Link>
               </li>
             ))}
             <li >

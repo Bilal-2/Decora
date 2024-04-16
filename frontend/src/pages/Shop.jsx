@@ -88,10 +88,10 @@ const Shop = () => {
       <div className="container mx-auto">
         <div className="flex lg:flex-nowrap md:flex-nowrap flex-wrap">
         <button
-        className=" bg-gray-800 text-white px-4 py-2 rounded-full lg:hidden md:hidden xl:hidden"
+        className=" bg-[#645832] text-white m-3 px-4 py-2 rounded-full lg:hidden md:hidden xl:hidden"
         onClick={toggleFilters}
       >
-        {showFilters ? "Close Filters" : "Open Filters"}
+        {showFilters ? "X" : "Filters"}
       </button>
           {showFilters && (
             <div className="absolute z-10 top-[9rem] lg:w-[20rem] bg-transparent backdrop-blur-md  p-3 mt-2 mb-2 rounded-lg shodow-ls ml-10">

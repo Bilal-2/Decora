@@ -3,7 +3,7 @@ import XRModel from "./XRModel";
 import { XR, ARButton } from "@react-three/xr";
 export default function XRModelContainer() {
   return (
-    <>
+    <div className="h-screen" >
       <div className="md:hidden lg:hidden  block">
         <ARButton
           sessionInit={{
@@ -16,7 +16,7 @@ export default function XRModelContainer() {
           <XRModel />
         </XR>
       </Canvas>
-    </>
+    </div>
   );
 }
 

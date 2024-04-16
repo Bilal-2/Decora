@@ -32,7 +32,8 @@ const UserOrder = () => {
               {error?.data?.error || error.error}
             </Message>
           ) : (
-            <table className="w-full">
+            <div className="overflow-x-auto">
+            <table className="w-full ">
               <thead>
                 <tr>
                   <td className="py-2">IMAGE</td>
@@ -93,6 +94,7 @@ const UserOrder = () => {
                 ))}
               </tbody>
             </table>
+            </div>
           )}
         </div>
       )}

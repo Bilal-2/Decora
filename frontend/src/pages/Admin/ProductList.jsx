@@ -149,7 +149,7 @@ const ProductList = () => {
                   type="number"
                   className="p-4 mb-3 w-[30rem] border rounded-lg  bg-white text-black"
                   value={price}
-                  onChange={(e) => setPrice(e.target.value)}
+                  onChange={(e) => {e.target.value>0?setPrice(e.target.value): 0}}
                 />
               </div>
 

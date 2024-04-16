@@ -1,0 +1,343 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 24726,
+      "type": "VEC3",
+      "max": [
+        19.132177352905273,
+        112.44667816162109,
+        26.511249542236328
+      ],
+      "min": [
+        -20.386651992797852,
+        -13.410529136657715,
+        -25.017053604125977
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 24726,
+      "type": "VEC3",
+      "max": [
+        1.0000044107437134,
+        1.0000044107437134,
+        1.0000044107437134
+      ],
+      "min": [
+        -1.0000044107437134,
+        -1.0000044107437134,
+        -1.0000044107437134
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 24726,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        1.0,
+        0.99999994039535522,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.4060608446598053,
+        -0.40987253189086914,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 24726,
+      "type": "VEC2",
+      "max": [
+        0.875,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 24726,
+      "type": "VEC2",
+      "max": [
+        1.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 24726,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5125,
+      "count": 78,
+      "type": "SCALAR",
+      "max": [
+        77.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5125,
+      "count": 6,
+      "type": "SCALAR",
+      "max": [
+        83.0
+      ],
+      "min": [
+        78.0
+      ]
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5125,
+      "count": 2502,
+      "type": "SCALAR",
+      "max": [
+        2585.0
+      ],
+      "min": [
+        84.0
+      ]
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5125,
+      "count": 22140,
+      "type": "SCALAR",
+      "max": [
+        24725.0
+      ],
+      "min": [
+        2586.0
+      ]
+    }
+  ],
+  "asset": {
+    "generator": "Plattar UnityGLTF (2022.3.14f1)",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "plantPot.bin",
+      "byteLength": 1879176
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 296712
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 296712,
+      "byteLength": 296712
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 593424,
+      "byteLength": 395616
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 989040,
+      "byteLength": 197808
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1186848,
+      "byteLength": 197808
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1384656,
+      "byteLength": 395616
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1780272,
+      "byteLength": 312
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1780584,
+      "byteLength": 24
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1780608,
+      "byteLength": 10008
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1790616,
+      "byteLength": 88560
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.267418444,
+          0.165244043,
+          0.0362870023,
+          1.0
+        ]
+      },
+      "name": "potMaterial_003"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.126830459,
+          0.1743198,
+          0.0948530957,
+          1.0
+        ]
+      },
+      "name": "grassMaterial_003"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.163867354,
+          0.412785083,
+          0.2033819,
+          1.0
+        ]
+      },
+      "name": "brachMaterial_001"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3608595,
+          0.482552528,
+          0.000751050829,
+          1.0
+        ]
+      },
+      "name": "leavesMaterial_002"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4,
+            "COLOR_0": 5
+          },
+          "indices": 6,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4,
+            "COLOR_0": 5
+          },
+          "indices": 7,
+          "material": 1
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4,
+            "COLOR_0": 5
+          },
+          "indices": 8,
+          "material": 2
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4,
+            "COLOR_0": 5
+          },
+          "indices": 9,
+          "material": 3
+        }
+      ],
+      "name": "plantPot"
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "name": "plantPot"
+    },
+    {
+      "mesh": 0,
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "name": "plantPot"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "plantPot"
+    }
+  ]
+}

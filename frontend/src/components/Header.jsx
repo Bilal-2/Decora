@@ -118,6 +118,7 @@ const Header = () => {
                           <Link
                             to="/profile"
                             className="text-xl text-black cursor-pointer"
+                            onClick={toggleDropdown}
                           >
                             <AiOutlineUser className="absolute top-[0.2rem] left-4" />{" "}
                             Profile
@@ -142,6 +143,7 @@ const Header = () => {
                             <Link
                               to="/admin/dashboard"
                               className="block px-4 py-2 hover:bg-gray-100"
+                              onClick={toggleDropdown}
                             >
                               <AiOutlineDashboard className="absolute top-[0.9rem] lg:top-[0.9rem] left-4" />
                               Dashboard
@@ -151,6 +153,7 @@ const Header = () => {
                             <Link
                               to="/admin/allproductslist"
                               className="block px-4 py-2 hover:bg-gray-100"
+                              onClick={toggleDropdown}
                             >
                               <VscSymbolMisc className="absolute top-[4.1rem] lg:top-[5.9rem] left-4" />
                               Products
@@ -160,6 +163,7 @@ const Header = () => {
                             <Link
                               to="/admin/categorylist"
                               className="block px-4 py-2 hover:bg-gray-100"
+                              onClick={toggleDropdown}
                             >
                               <MdOutlineCategory className="absolute top-[7.3rem] lg:top-[10.9rem] left-4" />
                               Category
@@ -169,6 +173,7 @@ const Header = () => {
                             <Link
                               to="/admin/orderlist"
                               className="block px-4 py-2 hover:bg-gray-100"
+                              onClick={toggleDropdown}
                             >
                               <BsHandbag className="absolute top-[10.5rem] lg:top-[15.9rem] left-4" />
                               Orders
@@ -178,6 +183,7 @@ const Header = () => {
                             <Link
                               to="/admin/userlist"
                               className="block px-4 py-2 hover:bg-gray-100"
+                              onClick={toggleDropdown}
                             >
                               <HiOutlineUsers className="absolute top-[13.7rem] lg:top-[20.9rem] left-4" />
                               Users
@@ -212,13 +218,13 @@ const Header = () => {
           <ul className="flex md:flex-row flex-col md:gap-10 gap-3 menu text-center text-black pb-3">
             {menus?.map((menu, index) => (
               <li key={index}>
-                <Link to={menu?.link} className="font-semi">
+                <Link to={menu?.link} onClick={() => menuBerger()} className="font-semi">
                   {menu?.name}
                 </Link>
               </li>
             ))}
             <li >
-                  <Link to='/favorite' className="font-semi text-black">
+                  <Link to='/favorite' onClick={() => menuBerger()} className="font-semi text-black">
                     Favorites 
                   </Link>
                 </li>

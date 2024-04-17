@@ -194,13 +194,34 @@ const fetchNewProducts = asyncHandler(async (req, res) => {
   }
 });
 
+// const filterProducts = asyncHandler(async (req, res) => {
+//   try {
+//     const { checked, radio } = req.body;
+
+//     let args = {};
+//     if (checked.length > 0) args.category = checked;
+//     if (radio.length) args.price = { $gte: radio[0], $lte: radio[1] };
+
+//     const products = await Product.find(args);
+//     res.json(products);
+//   } catch (error) {
+//     console.error(error);
+//     res.status(500).json({ error: "Server Error" });
+//   }
+// });
+
 const filterProducts = asyncHandler(async (req, res) => {
   try {
-    const { checked, radio } = req.body;
+    const { checked, radio, searchQuery } = req.body;
 
     let args = {};
     if (checked.length > 0) args.category = checked;
     if (radio.length) args.price = { $gte: radio[0], $lte: radio[1] };
+
+    // If there's a search query, add it to the args to filter products by name (case-insensitive)
+    if (searchQuery) {
+      args.name = { $regex: searchQuery, $options: 'i' }; // Case-insensitive regex search
+    }
 
     const products = await Product.find(args);
     res.json(products);
@@ -209,6 +230,7 @@ const filterProducts = asyncHandler(async (req, res) => {
     res.status(500).json({ error: "Server Error" });
   }
 });
+
 
 export {
   addProduct,

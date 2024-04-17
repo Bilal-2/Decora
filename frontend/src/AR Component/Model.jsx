@@ -5,7 +5,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { useParams } from 'react-router-dom';
 import { useGetProductDetailsQuery } from '../redux/api/productApiSlice';
 
-import Loader from '../components/Loader';
+//import Loader from '../components/Loader';
 import Message from '../components/Message';
 
 export default function Model({ position }) {
@@ -31,8 +31,16 @@ function ModelContent({ modelUrl, position }) {
 
   // Render the 3D model here using gltf.scene
   // For example:
-   return <primitive position={position} object={gltf.scene} />;
-  return <div>{modelUrl}</div>; // Just displaying modelUrl for demonstration
+   return (
+
+     <primitive 
+      position={position}
+      object={gltf.scene}
+      position-y={0}
+       />
+     );
+    
+ // return <div>{modelUrl}</div>; // Just displaying modelUrl for demonstration
 }
 
 

@@ -1,23 +1,19 @@
-// import React from 'react';
-// import { heroVideo } from '../assets/media/index';
-
-// export default function Hero() {
-//   return (
-//     <div className='relative w-full h-screen'>
-//       <video autoPlay loop muted className='object-cover object-center w-full h-full'>
-//         <source src={heroVideo} type='video/mp4' />
-//       </video>
-//       <div className='absolute inset-0 flex items-center justify-center bg-transparent'>
-//         <div className='bg-black opacity-40 w-full h-full absolute z-10'></div>
-//         <h1 className='text-4xl font-bold text-white relative z-20 bg-transparent'>Try Then Buy</h1>
-//       </div>
-//     </div>
-//   );
-// }
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 const Hero = () => {
+
+  const [searchQuery, setSearchQuery] = useState("");
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Redirect to shop page with search query as URL parameter
+    navigate(`/shop?search=${encodeURIComponent(searchQuery)}`);
+  };
+
   const [BannerImg, setBannerImg] = useState({
     one: true,
     two: false,
@@ -102,12 +98,14 @@ const Hero = () => {
               iscover our exquisite furniture collection today.
               </p>
               <div className="w-[95%] md:w-full">
-                <form className="flex border border-black">
+                <form className="flex border border-black" onSubmit={handleSubmit}>
                   <input
                     className="flex-1 text-black w-full px-3 bg-transparent focus:outline-none"
                     type="text"
                     name="search"
+                    value={searchQuery}
                     placeholder="Search your product here..."
+                    onChange={(e) => setSearchQuery(e.target.value)}
                   />
                   <button
                     type="submit"
